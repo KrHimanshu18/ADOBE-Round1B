@@ -199,10 +199,25 @@ class DocumentProcessor:
 
     def process_query(self, query, persona, input_documents):
         print("\n--- Processing Query ---")
-        
+
         print("Step 1/4: Searching for relevant information...")
         enhanced_query = f"{persona}: {query}"
         ranked_chunks = self._search_and_rerank(enhanced_query)
+
+        # ✅ Save top 50 ranked chunks to chunk_data/chunks.json
+        os.makedirs("chunk_data", exist_ok=True)
+        chunks_to_save = [
+            {
+                "text": chunk["text"],
+                "metadata": chunk["metadata"],
+                "rerank_score": float(chunk["rerank_score"])  # Fix applied here
+            }
+            for chunk in ranked_chunks
+        ]
+        with open("chunk_data/chunks.json", "w", encoding="utf-8") as f:
+            json.dump(chunks_to_save, f, indent=2)
+        print("Top 50 ranked chunks saved to chunk_data/chunks.json")
+
 
         print("Step 2/4: Identifying top sections from best chunks...")
         extracted_sections = self._generate_main_sections(ranked_chunks)
@@ -221,9 +236,10 @@ class DocumentProcessor:
             "extracted_sections": extracted_sections,
             "subsection_analysis": subsection_analysis
         }
-        
+
         print("--- Query Processed Successfully ---")
         return final_output
+
 
 
 if __name__ == '__main__':
