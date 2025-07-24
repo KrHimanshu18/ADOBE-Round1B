@@ -1,0 +1,3782 @@
+[
+  {
+    "text": "The South of France, with its stunning coastline, picturesque villages, and vibrant cities, oﬀers a wealth of activities and experiences for travelers. Whether you're seeking adventure, relaxation, or cultural enrichment, this region has something for everyone. This guide will take you through a variety of activities and must-see attractions to help you plan an unforgettable trip.",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 122.2440414428711,
+      "x1": 538.0333251953125,
+      "y1": 205.40394592285156
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 1,
+    "line_position": 122.2440414428711,
+    "width": 466.0333251953125,
+    "height": 83.15990447998047,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.15434853717534228,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 1,
+      "section_title": "Introduction",
+      "font_size": 12.0,
+      "word_count": 56
+    }
+  },
+  {
+    "text": "The South of France is renowned for its beautiful coastline along the Mediterranean Sea. Here are some activities to enjoy by the sea:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 540.9120483398438,
+      "y1": 129.0240020751953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 97.16402435302734,
+    "width": 468.91204833984375,
+    "height": 31.85997772216797,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Coastal Adventures",
+      "font_size": 12.0,
+      "word_count": 23
+    }
+  },
+  {
+    "text": "• Nice: Visit the sandy shores and enjoy the vibrant Promenade des Anglais.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.48402404785156,
+      "x1": 480.4920349121094,
+      "y1": 179.59652709960938
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 164.48402404785156,
+    "width": 390.4920349121094,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2076818485452671,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Antibes: Relax on the pebbled beaches and explore the charming old town.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 189.68397521972656,
+      "x1": 488.5920104980469,
+      "y1": 204.79647827148438
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 189.68397521972656,
+    "width": 398.5920104980469,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.23949996871177595,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Saint-Tropez: Experience the exclusive beach clubs and glamorous atmosphere.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 214.8839874267578,
+      "x1": 510.7920227050781,
+      "y1": 229.99649047851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 214.8839874267578,
+    "width": 420.7920227050781,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.271318165942876,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Marseille to Cassis: Explore the stunning limestone cliﬀs and hidden coves of Calanques National Park.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 240.1439971923828,
+      "x1": 496.9907531738281,
+      "y1": 272.12396240234375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 240.1439971923828,
+    "width": 406.9907531738281,
+    "height": 31.979965209960938,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.30321211766715,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Îles d'Hyères: Discover pristine beaches and excellent snorkeling opportunities on islands like Porquerolles and Port-Cros.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 282.4440002441406,
+      "x1": 521.7118530273438,
+      "y1": 314.4239807128906
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 282.4440002441406,
+    "width": 431.71185302734375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3566212124294705,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Cannes: Enjoy the sandy beaches and luxury beach clubs along the Boulevard de la Croisette.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 324.7440185546875,
+      "x1": 526.63818359375,
+      "y1": 356.7239990234375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 324.7440185546875,
+    "width": 436.63818359375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.41003032645793874,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Menton: Visit the serene beaches and beautiful gardens in this charming town near the Italian border.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 367.10400390625,
+      "x1": 525.1981811523438,
+      "y1": 399.083984375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 367.10400390625,
+    "width": 435.19818115234375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.46351515644728536,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Beach Hopping",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Cannes, Nice, and Saint-Tropez: Try jet skiing or parasailing for a thrill.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 434.54400634765625,
+      "x1": 464.2919921875,
+      "y1": 449.656494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 434.54400634765625,
+    "width": 374.2919921875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5486666746813842,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Toulon: Dive into the underwater world with scuba diving excursions to explore wrecks.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 459.7440185546875,
+      "x1": 509.17327880859375,
+      "y1": 491.7239990234375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 459.7440185546875,
+    "width": 419.17327880859375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5804848719124842,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Cerbère-Banyuls: Visit the marine reserve for an unforgettable diving experience.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 502.0440368652344,
+      "x1": 518.531982421875,
+      "y1": 517.156494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 502.0440368652344,
+    "width": 428.531982421875,
+    "height": 15.112457275390625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6338939859409525,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Mediterranean Coast: Charter a yacht or join a sailing tour to explore the coastline and nearby islands.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 527.3040161132812,
+      "x1": 523.9968872070312,
+      "y1": 559.2839965820312
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 527.3040161132812,
+    "width": 433.99688720703125,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6657878991329309,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Marseille: Go windsurfing or kitesurfing in the windy bays.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 569.60400390625,
+      "x1": 403.5119934082031,
+      "y1": 584.7164916992188
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 569.60400390625,
+    "width": 313.5119934082031,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7191969746291035,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Port Grimaud: Rent a paddleboard and explore the canals of this picturesque village.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 594.8040161132812,
+      "x1": 535.0919189453125,
+      "y1": 609.91650390625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 594.8040161132812,
+    "width": 445.0919189453125,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7510151718602036,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• La Ciotat: Try snorkeling in the clear waters around the Île Verte.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 620.06396484375,
+      "x1": 433.2120056152344,
+      "y1": 635.1764526367188
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 620.06396484375,
+    "width": 343.2120056152344,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7829090465198864,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "The South of France is rich in history and culture. Here are some activities to immerse yourself in the region's heritage:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 500.1792297363281,
+      "y1": 129.0240020751953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 97.16402435302734,
+    "width": 428.1792297363281,
+    "height": 31.85997772216797,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Cultural Experiences",
+      "font_size": 12.0,
+      "word_count": 21
+    }
+  },
+  {
+    "text": "• Nice: Visit the Musée Matisse, dedicated to the works of Henri Matisse.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.48402404785156,
+      "x1": 464.4720153808594,
+      "y1": 179.59652709960938
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 164.48402404785156,
+    "width": 374.4720153808594,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2076818485452671,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Antibes: Explore the Musée Picasso, housed in the Château Grimaldi.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 189.68397521972656,
+      "x1": 456.4320068359375,
+      "y1": 204.79647827148438
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 189.68397521972656,
+    "width": 366.4320068359375,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.23949996871177595,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Saint-Paul-de-Vence: Discover modern art at the Fondation Maeght.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 214.8839874267578,
+      "x1": 455.6520080566406,
+      "y1": 229.99649047851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 214.8839874267578,
+    "width": 365.6520080566406,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.271318165942876,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Aix-en-Provence: Visit the Atelier Cézanne, the studio of the famous painter Paul Cézanne.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 240.1439971923828,
+      "x1": 515.7120361328125,
+      "y1": 272.12396240234375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 240.1439971923828,
+    "width": 425.7120361328125,
+    "height": 31.979965209960938,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.30321211766715,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Arles: Explore the Fondation Vincent van Gogh, showcasing works inspired by the artist.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 282.4440002441406,
+      "x1": 520.8121337890625,
+      "y1": 314.4239807128906
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 282.4440002441406,
+    "width": 430.8121337890625,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3566212124294705,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Marseille: Visit the MuCEM (Museum of European and Mediterranean Civilizations) for a deep dive into the region's history.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 324.7440185546875,
+      "x1": 527.8368530273438,
+      "y1": 356.7239990234375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 324.7440185546875,
+    "width": 437.83685302734375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.41003032645793874,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 19
+    }
+  },
+  {
+    "text": "• Toulouse: Discover the Musée des Augustins, a fine arts museum housed in a former convent.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 367.10400390625,
+      "x1": 533.5957641601562,
+      "y1": 399.083984375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 367.10400390625,
+    "width": 443.59576416015625,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.46351515644728536,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Art and Museums",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Nîmes: Walk across the ancient Roman aqueduct, Pont du Gard.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 434.54400634765625,
+      "x1": 431.0520324707031,
+      "y1": 449.656494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 434.54400634765625,
+    "width": 341.0520324707031,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5486666746813842,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Avignon: Explore the largest Gothic palace in Europe, Palais des Papes.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 459.7440185546875,
+      "x1": 465.3119812011719,
+      "y1": 474.85650634765625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 459.7440185546875,
+    "width": 375.3119812011719,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5804848719124842,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Carcassonne: Wander through the medieval citadel with its double walls and 52 towers.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 484.9440002441406,
+      "x1": 510.433349609375,
+      "y1": 516.9240112304688
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 484.9440002441406,
+    "width": 420.433349609375,
+    "height": 31.980010986328125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6123030306112887,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Arles: Visit the Roman amphitheater and ancient theater.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 527.3040161132812,
+      "x1": 395.4720153808594,
+      "y1": 542.41650390625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 527.3040161132812,
+    "width": 305.4720153808594,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6657878991329309,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Orange: Explore the well-preserved Roman theater and triumphal arch.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 552.5039672851562,
+      "x1": 468.49688720703125,
+      "y1": 567.616455078125
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 552.5039672851562,
+    "width": 378.49688720703125,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6976060192994397,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Aigues-Mortes: Discover the medieval walled town and its salt marshes.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 577.7039794921875,
+      "x1": 473.1719970703125,
+      "y1": 592.8164672851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 577.7039794921875,
+    "width": 383.1719970703125,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7294242165305398,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Grasse: Visit the perfume factories and learn about the history of fragrance production.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 602.9639892578125,
+      "x1": 484.1532897949219,
+      "y1": 634.9440307617188
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 602.9639892578125,
+    "width": 394.1532897949219,
+    "height": 31.98004150390625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7613181682548138,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "section_title": "Historical Sites",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Verdon Gorge: Known as the \"Grand Canyon of Europe,\" oﬀering spectacular hiking trails.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.48402404785156,
+      "x1": 529.273193359375,
+      "y1": 196.46400451660156
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 164.48402404785156,
+    "width": 439.273193359375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2076818485452671,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Luberon Regional Park: Explore picturesque villages and rolling hills, famous for lavender fields and vineyards.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 206.7840118408203,
+      "x1": 514.5145874023438,
+      "y1": 238.7639923095703
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 206.7840118408203,
+    "width": 424.51458740234375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2610909240414398,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Pyrenees National Park: Enjoy challenging hikes and stunning mountain scenery.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 249.08399963378906,
+      "x1": 518.0519409179688,
+      "y1": 264.1965026855469
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 249.08399963378906,
+    "width": 428.05194091796875,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.31449999953761243,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Mercantour National Park: Discover diverse wildlife and beautiful alpine landscapes.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 274.3440246582031,
+      "x1": 536.4719848632812,
+      "y1": 289.4565124511719
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 274.3440246582031,
+    "width": 446.47198486328125,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3463939705280342,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Camargue: Explore the unique wetlands on horseback or by bike.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 299.54400634765625,
+      "x1": 439.2720031738281,
+      "y1": 314.656494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 299.54400634765625,
+    "width": 349.2720031738281,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3782121292268387,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Mont Ventoux: Challenge yourself with a hike or bike ride up this iconic mountain.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 324.7440185546875,
+      "x1": 522.8519897460938,
+      "y1": 339.85650634765625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 324.7440185546875,
+    "width": 432.85198974609375,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.41003032645793874,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Gorges du Tarn: Hike through dramatic gorges and enjoy breathtaking views.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 350.0039978027344,
+      "x1": 497.0520324707031,
+      "y1": 365.1164855957031
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 350.0039978027344,
+    "width": 407.0520324707031,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.4419242396499171,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Hiking and Biking",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Ardèche River: Paddle through the stunning Ardèche Gorge.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 400.3440246582031,
+      "x1": 413.5320129394531,
+      "y1": 415.4565124511719
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 400.3440246582031,
+    "width": 323.5320129394531,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5054848796189434,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Dordogne River: Enjoy a leisurely canoe trip, passing by medieval castles and charming villages.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 425.54400634765625,
+      "x1": 497.6580810546875,
+      "y1": 457.52398681640625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 425.54400634765625,
+    "width": 407.6580810546875,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5373030383177478,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Ubaye River: Experience white-water rafting for an adrenaline rush.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 467.8440246582031,
+      "x1": 448.4520263671875,
+      "y1": 482.9565124511719
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 467.8440246582031,
+    "width": 358.4520263671875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5907121523462161,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Gorges du Verdon: Rent a kayak or paddleboat to explore the turquoise waters.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 493.10400390625,
+      "x1": 510.25201416015625,
+      "y1": 508.21649169921875
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 493.10400390625,
+    "width": 420.25201416015625,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6226060655381944,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Lake Sainte-Croix: Enjoy swimming, sailing, and windsurfing on this beautiful lake.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 518.3040161132812,
+      "x1": 525.858154296875,
+      "y1": 533.41650390625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 518.3040161132812,
+    "width": 435.858154296875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6544242627692946,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Lake Serre-Ponçon: Try water skiing or wakeboarding on one of the largest artificial lakes in Europe.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 543.5039672851562,
+      "x1": 530.8920288085938,
+      "y1": 575.4839477539062
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 543.5039672851562,
+    "width": 440.89202880859375,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6862423829358033,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Cévennes National Park: Go canyoning in the rugged terrain of this beautiful park.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 585.8639526367188,
+      "x1": 523.9320068359375,
+      "y1": 600.9764404296875
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 585.8639526367188,
+    "width": 433.9320068359375,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.73972721292515,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Water Activities",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "The South of France is a food lover's paradise. Here are some activities to indulge in the region's culinary delights:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 509.8922119140625,
+      "y1": 129.0240020751953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 97.16402435302734,
+    "width": 437.8922119140625,
+    "height": 31.85997772216797,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Culinary Delights",
+      "font_size": 12.0,
+      "word_count": 20
+    }
+  },
+  {
+    "text": "• Provence: Explore vineyards known for their rosé wines.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.48402404785156,
+      "x1": 393.37200927734375,
+      "y1": 179.59652709960938
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 164.48402404785156,
+    "width": 303.37200927734375,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2076818485452671,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Languedoc: Discover diverse wines, including reds, whites, and sparkling wines.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 189.68397521972656,
+      "x1": 509.3520202636719,
+      "y1": 204.79647827148438
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 189.68397521972656,
+    "width": 419.3520202636719,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.23949996871177595,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Châteauneuf-du-Pape: Visit this famous wine region near Avignon.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 214.8839874267578,
+      "x1": 446.8320007324219,
+      "y1": 229.99649047851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 214.8839874267578,
+    "width": 356.8320007324219,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.271318165942876,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Bandol: Taste the robust red wines and refreshing rosés of this coastal region.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 240.1439971923828,
+      "x1": 497.4119873046875,
+      "y1": 255.25650024414062
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 240.1439971923828,
+    "width": 407.4119873046875,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.30321211766715,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Côtes du Rhône: Explore the vineyards along the Rhône River.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 265.3440246582031,
+      "x1": 423.3719787597656,
+      "y1": 280.4565124511719
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 265.3440246582031,
+    "width": 333.3719787597656,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.33503033416439787,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Gaillac: Discover the unique wines of this lesser-known region.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 290.54400634765625,
+      "x1": 425.2320251464844,
+      "y1": 305.656494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 290.54400634765625,
+    "width": 335.2320251464844,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3668484928632023,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Bordeaux: Take a day trip to the world-renowned wine region and visit its prestigious châteaux.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 315.80401611328125,
+      "x1": 537.0733032226562,
+      "y1": 347.78399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 315.80401611328125,
+    "width": 447.07330322265625,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3987424445874763,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Provence: Learn to prepare traditional dishes like ratatouille and bouillabaisse.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 383.2440185546875,
+      "x1": 504.31201171875,
+      "y1": 398.35650634765625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 383.2440185546875,
+    "width": 414.31201171875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.48389396282157515,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Périgord: Join a truﬄe hunting tour followed by a cooking class.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 408.4440002441406,
+      "x1": 430.2720031738281,
+      "y1": 423.5564880371094
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 408.4440002441406,
+    "width": 340.2720031738281,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5157121215203796,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Nice: Take a class to master Niçoise cuisine, including dishes like salade niçoise and socca.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 433.7040100097656,
+      "x1": 525.4981689453125,
+      "y1": 465.6839904785156
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 433.7040100097656,
+    "width": 435.4981689453125,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5476060732446536,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Toulouse: Learn to cook regional specialties such as cassoulet.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 476.0039978027344,
+      "x1": 422.8344421386719,
+      "y1": 491.1164855957031
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 476.0039978027344,
+    "width": 332.8344421386719,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6010151487408262,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Marseille: Participate in a seafood cooking class to make dishes like bouillabaisse.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 501.2040100097656,
+      "x1": 520.27197265625,
+      "y1": 516.3164672851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 501.2040100097656,
+    "width": 430.27197265625,
+    "height": 15.112457275390625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6328333459719263,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Lyon: Discover the secrets of Lyonnaise cuisine with a hands-on cooking class.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 526.4639892578125,
+      "x1": 501.4320373535156,
+      "y1": 541.5764770507812
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 526.4639892578125,
+    "width": 411.4320373535156,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6647272591639046,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Sarlat: Join a foie gras workshop and learn to prepare this delicacy.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 551.6640014648438,
+      "x1": 444.97198486328125,
+      "y1": 566.7764892578125
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 551.6640014648438,
+    "width": 354.97198486328125,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6965454563950048,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Cooking Classes",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "The South of France hosts a variety of festivals and events throughout the year. Here are some not-to-miss celebrations:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 512.7122192382812,
+      "y1": 129.0240020751953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 97.16402435302734,
+    "width": 440.71221923828125,
+    "height": 31.85997772216797,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 19
+    }
+  },
+  {
+    "text": "• Cannes: Attend the prestigious Cannes Film Festival in May.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 139.34400939941406,
+      "x1": 408.79571533203125,
+      "y1": 154.45651245117188
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 139.34400939941406,
+    "width": 318.79571533203125,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.175939405807341,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Nice: Experience the vibrant Nice Carnival in February.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.5440216064453,
+      "x1": 382.9920349121094,
+      "y1": 179.65652465820312
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 164.5440216064453,
+    "width": 292.9920349121094,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.20775760303844104,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Avignon: Enjoy the Avignon Festival in July, featuring theater, dance, and music performances.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 189.80397033691406,
+      "x1": 505.2720947265625,
+      "y1": 221.78395080566406
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 189.80397033691406,
+    "width": 415.2720947265625,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2396514776981238,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Arles: Celebrate the Feria d'Arles, a traditional bullfighting festival held in April and September.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 232.10401916503906,
+      "x1": 524.4745483398438,
+      "y1": 264.083984375
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 232.10401916503906,
+    "width": 434.47454833984375,
+    "height": 31.979965209960938,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2930606302588877,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Menton: Visit the Lemon Festival in February, featuring elaborate citrus-themed floats and sculptures.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 274.4040222167969,
+      "x1": 540.1307373046875,
+      "y1": 306.3840026855469
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 274.4040222167969,
+    "width": 450.1307373046875,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.34646972502120815,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Grasse: Attend the Rose Festival in May, celebrating the town's famous flower.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 316.7640075683594,
+      "x1": 501.31201171875,
+      "y1": 331.8764953613281
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 316.7640075683594,
+    "width": 411.31201171875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.39995455501055477,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Marseille: Experience the Fête de la Musique in June, with free concerts and performances throughout the city.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 341.9640197753906,
+      "x1": 491.3522033691406,
+      "y1": 373.9440002441406
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 341.9640197753906,
+    "width": 401.3522033691406,
+    "height": 31.97998046875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.43177275224165484,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 6,
+      "section_title": "Festivals and Events",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Aix-en-Provence: Visit Thermes Sextius for thermal baths and massages.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 147.3839874267578,
+      "x1": 474.4919738769531,
+      "y1": 162.49649047851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 147.3839874267578,
+    "width": 384.4919738769531,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.1860908932156033,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Bordeaux: Enjoy vinotherapy treatments at Les Sources de Caudalie.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 172.58399963378906,
+      "x1": 453.4319763183594,
+      "y1": 187.69650268554688
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 172.58399963378906,
+    "width": 363.4319763183594,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.21790909044670337,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Vichy: Experience hydrotherapy and mud baths at Spa Vichy Célestins.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 197.7840118408203,
+      "x1": 463.2181396484375,
+      "y1": 212.89651489257812
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 197.7840118408203,
+    "width": 373.2181396484375,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.24972728767780342,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Evian-les-Bains: Relax at the Evian Resort, known for its mineral-rich waters.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 223.0440216064453,
+      "x1": 494.77203369140625,
+      "y1": 238.15652465820312
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 223.0440216064453,
+    "width": 404.77203369140625,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2816212394020774,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Saint-Raphaël: Visit the Thalasso Spa for seawater treatments and relaxation.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 248.2439727783203,
+      "x1": 497.1719665527344,
+      "y1": 263.3564758300781
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 248.2439727783203,
+    "width": 407.1719665527344,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.31343935956858626,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Biarritz: Enjoy the luxurious spas and wellness centers in this coastal town.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 273.4440002441406,
+      "x1": 483.73199462890625,
+      "y1": 288.5564880371094
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 273.4440002441406,
+    "width": 393.73199462890625,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3452575760658341,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Cannes: Indulge in a pampering session at one of the many high-end spas.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 298.7040100097656,
+      "x1": 481.63201904296875,
+      "y1": 313.8164978027344
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 298.7040100097656,
+    "width": 391.63201904296875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.37715152779010813,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Spa and Wellness Retreats",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Provence: Join a yoga retreat in the serene countryside.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 349.04400634765625,
+      "x1": 388.6920166015625,
+      "y1": 364.156494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 349.04400634765625,
+    "width": 298.6920166015625,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.4407121292268387,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Pyrenees: Escape to the mountains for a meditation retreat.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 374.2440185546875,
+      "x1": 410.5320129394531,
+      "y1": 389.35650634765625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 374.2440185546875,
+    "width": 320.5320129394531,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.47253032645793874,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Côte d'Azur: Combine relaxation with luxury at a wellness retreat.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 399.5039978027344,
+      "x1": 440.6520080566406,
+      "y1": 414.6164855957031
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 399.5039978027344,
+    "width": 350.6520080566406,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5044242396499171,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Luberon: Participate in a holistic retreat with yoga, meditation, and organic meals.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 424.7040100097656,
+      "x1": 520.8781127929688,
+      "y1": 439.8164978027344
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 424.7040100097656,
+    "width": 430.87811279296875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5362424368810172,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Camargue: Enjoy a retreat focused on mindfulness and nature immersion.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 449.9040222167969,
+      "x1": 480.3119812011719,
+      "y1": 465.0165100097656
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 449.9040222167969,
+    "width": 390.3119812011719,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5680606341121173,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Saint-Tropez: Find tranquility at a yoga retreat overlooking the Mediterranean.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 475.16400146484375,
+      "x1": 503.8919982910156,
+      "y1": 490.2764892578125
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 475.16400146484375,
+    "width": 413.8919982910156,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5999545473040957,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Corsica: Experience a yoga and wellness retreat on this beautiful island.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 500.3639831542969,
+      "x1": 468.0719909667969,
+      "y1": 515.4764404296875
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 500.3639831542969,
+    "width": 378.0719909667969,
+    "height": 15.112457275390625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6317727060029001,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 7,
+      "section_title": "Yoga and Meditation Retreats",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "The South of France is a shopper's paradise, with a variety of markets, boutiques, and artisan shops:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 536.17822265625,
+      "y1": 129.0240020751953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 97.16402435302734,
+    "width": 464.17822265625,
+    "height": 31.85997772216797,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Shopping and Markets",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Nice: Explore the vibrant Cours Saleya Market.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.48402404785156,
+      "x1": 343.87200927734375,
+      "y1": 179.59652709960938
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 164.48402404785156,
+    "width": 253.87200927734375,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2076818485452671,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 8
+    }
+  },
+  {
+    "text": "• Cannes: Visit Marché Forville for fresh seafood and local produce.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 189.68397521972656,
+      "x1": 439.3320007324219,
+      "y1": 204.79647827148438
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 189.68397521972656,
+    "width": 349.3320007324219,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.23949996871177595,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Avignon: Discover local products at Marché des Halles.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 214.8839874267578,
+      "x1": 386.5320129394531,
+      "y1": 229.99649047851562
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 214.8839874267578,
+    "width": 296.5320129394531,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.271318165942876,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "• Aix-en-Provence: Browse the stalls at the daily market on Place Richelme.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 240.1439971923828,
+      "x1": 482.8919982910156,
+      "y1": 255.25650024414062
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 240.1439971923828,
+    "width": 392.8919982910156,
+    "height": 15.112503051757812,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.30321211766715,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Saint-Rémy-de-Provence: Enjoy the lively Wednesday market with local specialties.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 265.3440246582031,
+      "x1": 531.9119873046875,
+      "y1": 280.4565124511719
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 265.3440246582031,
+    "width": 441.9119873046875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.33503033416439787,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Uzès: Visit the Saturday market for fresh produce and artisanal goods.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 290.54400634765625,
+      "x1": 459.61199951171875,
+      "y1": 305.656494140625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 290.54400634765625,
+    "width": 369.61199951171875,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3668484928632023,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Sarlat: Explore the bustling market in the heart of the medieval town.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 315.80401611328125,
+      "x1": 457.8719787597656,
+      "y1": 330.91650390625
+    },
+    "font_size": 12.0,
+    "is_bold": true,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 315.80401611328125,
+    "width": 367.8719787597656,
+    "height": 15.11248779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3987424445874763,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Local Markets",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Cannes: Shop along the famous Rue d'Antibes, lined with high-end boutiques, designer stores, and luxury brands.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 366.1440124511719,
+      "x1": 500.29327392578125,
+      "y1": 398.0039978027344
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 366.1440124511719,
+    "width": 410.29327392578125,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.4623030460242069,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Aix-en-Provence: Browse shops and cafes on Cours Mirabeau, an elegant boulevard with a variety of stores.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 408.3240051269531,
+      "x1": 529.6357421875,
+      "y1": 440.1839904785156
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 408.3240051269531,
+    "width": 439.6357421875,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5155606125340317,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Nice: Find charming boutiques in the old town, oﬀering handmade soaps, ceramics, and local crafts.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 450.5039978027344,
+      "x1": 527.1793212890625,
+      "y1": 482.3639831542969
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 450.5039978027344,
+    "width": 437.1793212890625,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5688181790438566,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Saint-Tropez: Explore the chic boutiques and designer stores in this glamorous town.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 492.7440185546875,
+      "x1": 533.0519409179688,
+      "y1": 507.73651123046875
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 492.7440185546875,
+    "width": 443.05194091796875,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6221515385791508,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Marseille: Visit the trendy shops in the Le Panier district, known for its artisan goods and unique finds.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 517.823974609375,
+      "x1": 529.511962890625,
+      "y1": 549.6840209960938
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 517.823974609375,
+    "width": 439.511962890625,
+    "height": 31.86004638671875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6538181497593119,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 19
+    }
+  },
+  {
+    "text": "• Montpellier: Discover the boutiques in the historic Écusson district, oﬀering fashion, jewelry, and art.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 560.0039672851562,
+      "x1": 527.5921020507812,
+      "y1": 591.8639526367188
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 560.0039672851562,
+    "width": 437.59210205078125,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7070757162691367,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Toulouse: Shop in the vibrant Capitole area, home to a mix of high-end and independent stores.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 602.1839599609375,
+      "x1": 486.4320068359375,
+      "y1": 634.0440063476562
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 602.1839599609375,
+    "width": 396.4320068359375,
+    "height": 31.86004638671875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7603332827789615,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 8,
+      "section_title": "Boutique Shopping",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "The South of France oﬀers a variety of activities that are perfect for families with children:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 519.7393188476562,
+      "y1": 111.92402648925781
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 97.16402435302734,
+    "width": 447.73931884765625,
+    "height": 14.760002136230469,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Family-Friendly Activities",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Antibes: Visit Marineland for marine shows and an aquarium.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 147.38400268554688,
+      "x1": 416.3569641113281,
+      "y1": 162.37649536132812
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 147.38400268554688,
+    "width": 326.3569641113281,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.1860909124817511,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Fréjus: Cool oﬀ at Aqualand water park.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 172.46401977539062,
+      "x1": 309.13201904296875,
+      "y1": 187.45651245117188
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 172.46401977539062,
+    "width": 219.13201904296875,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.21775760072650333,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 8
+    }
+  },
+  {
+    "text": "• Villeneuve-Loubet: Enjoy quirky attractions at Le Village des Fous.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 197.54403686523438,
+      "x1": 441.1919860839844,
+      "y1": 212.53652954101562
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 197.54403686523438,
+    "width": 351.1919860839844,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.24942428897125551,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 10
+    }
+  },
+  {
+    "text": "• Monteux: Spend a day at Parc Spirou, a theme park based on the famous comic book character.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 222.68399047851562,
+      "x1": 536.4757080078125,
+      "y1": 254.54396057128906
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 222.68399047851562,
+    "width": 446.4757080078125,
+    "height": 31.859970092773438,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.28116665464459045,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• La Palmyre: Explore the La Palmyre Zoo, home to a wide variety of animals.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 264.8639831542969,
+      "x1": 488.7168273925781,
+      "y1": 279.8564758300781
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 264.8639831542969,
+    "width": 398.7168273925781,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.3344242211544152,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Cap d'Agde: Have fun at Luna Park, an amusement park with rides and games.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 289.9440002441406,
+      "x1": 501.5519714355469,
+      "y1": 304.9364929199219
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 289.9440002441406,
+    "width": 411.5519714355469,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.36609090939916744,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Toulouse: Visit the Cité de l'Espace, a space-themed science museum with interactive exhibits.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 315.0240173339844,
+      "x1": 536.8895874023438,
+      "y1": 346.8840026855469
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 315.0240173339844,
+    "width": 446.88958740234375,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.39775759764391966,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Theme Parks and Attractions",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Verdon Gorge: Take a family hike or rent paddle boats to explore the stunning Verdon Gorge.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 382.343994140625,
+      "x1": 539.2921752929688,
+      "y1": 414.2039794921875
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 382.343994140625,
+    "width": 449.29217529296875,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.482757568359375,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Camargue Natural Park: Explore wetlands with wild horses and flamingos, and enjoy horseback riding, bird watching, and boat tours.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 424.5840148925781,
+      "x1": 533.2968139648438,
+      "y1": 456.4440002441406
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 424.5840148925781,
+    "width": 443.29681396484375,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5360909278946694,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 20
+    }
+  },
+  {
+    "text": "• Various Locations: Try tree-top adventure parks with zip lines, rope bridges, and climbing challenges.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 466.7640075683594,
+      "x1": 509.9532470703125,
+      "y1": 498.6239929199219
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 466.7640075683594,
+    "width": 419.9532470703125,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5893484944044941,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Gorges du Tarn: Go on a family-friendly hike and enjoy the scenic views.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 508.9440002441406,
+      "x1": 471.3120422363281,
+      "y1": 523.9364624023438
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 508.9440002441406,
+    "width": 381.3120422363281,
+    "height": 14.992462158203125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6426060609143189,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Lake Annecy: Rent bikes and ride along the lake's picturesque bike paths.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 534.0239868164062,
+      "x1": 476.9582214355469,
+      "y1": 549.0164794921875
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 534.0239868164062,
+    "width": 386.9582214355469,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6742727106267755,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Pyrenees: Take a cable car ride for stunning mountain views and easy hiking trails.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 559.1640014648438,
+      "x1": 520.1558837890625,
+      "y1": 574.156494140625
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 559.1640014648438,
+    "width": 430.1558837890625,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7060151533647017,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Dordogne: Explore the region's caves and prehistoric sites with guided tours suitable for children.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 584.2439575195312,
+      "x1": 531.91064453125,
+      "y1": 616.1039428710938
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 584.2439575195312,
+    "width": 441.91064453125,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7376817645448627,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Outdoor Adventures",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Toulouse: Visit Cité de l'Espace for a space-themed science museum with interactive exhibits, a planetarium, and a replica of the Mir space station.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 651.56396484375,
+      "x1": 532.089599609375,
+      "y1": 683.4240112304688
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 651.56396484375,
+    "width": 442.089599609375,
+    "height": 31.86004638671875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.8226817737926136,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 9,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 24
+    }
+  },
+  {
+    "text": "• Monaco: Explore the Musée Océanographique and its marine exhibits, including a shark lagoon and touch tanks.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 72.02400970458984,
+      "x1": 520.035888671875,
+      "y1": 103.88398742675781
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 72.02400970458984,
+    "width": 430.035888671875,
+    "height": 31.85997772216797,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.09093940619266394,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 10,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Dordogne: See ancient cave paintings at prehistoric sites like Lascaux and Rouﬃgnac, and visit museums dedicated to prehistoric life.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 114.2040023803711,
+      "x1": 536.2920532226562,
+      "y1": 146.06398010253906
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 114.2040023803711,
+    "width": 446.29205322265625,
+    "height": 31.85997772216797,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.14419697270248877,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 10,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 20
+    }
+  },
+  {
+    "text": "• Montpellier: Discover the Planet Ocean World, an aquarium and planetarium with interactive exhibits.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 156.38400268554688,
+      "x1": 519.9734497070312,
+      "y1": 188.2439727783203
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 156.38400268554688,
+    "width": 429.97344970703125,
+    "height": 31.859970092773438,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.19745454884538746,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 10,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Carcassonne: Take a guided tour of the medieval citadel and learn about its history and architecture.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 198.62399291992188,
+      "x1": 523.7593994140625,
+      "y1": 230.4839630126953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 198.62399291992188,
+    "width": 433.7593994140625,
+    "height": 31.859970092773438,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2507878698483862,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 10,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Nîmes: Visit the Roman amphitheater and learn about ancient Roman history.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 240.80398559570312,
+      "x1": 498.7919921875,
+      "y1": 255.79647827148438
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 240.80398559570312,
+    "width": 408.7919921875,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.304045436358211,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 10,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 12
+    }
+  },
+  {
+    "text": "• Arles: Explore the Roman ruins and the Musée de l'Arles Antique, which showcases artifacts from the city's past.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 265.8840026855469,
+      "x1": 526.3309326171875,
+      "y1": 297.7439880371094
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 265.8840026855469,
+    "width": 436.3309326171875,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.33571212460296324,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 10,
+      "section_title": "Educational Experiences",
+      "font_size": 12.0,
+      "word_count": 19
+    }
+  },
+  {
+    "text": "The South of France oﬀers a vibrant nightlife scene, with options ranging from chic bars to lively nightclubs:",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 521.5330810546875,
+      "y1": 129.0240020751953
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 97.16402435302734,
+    "width": 449.5330810546875,
+    "height": 31.85997772216797,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightlife and Entertainment",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Monaco: Enjoy classic cocktails and live jazz at Le Bar Americain, located in the Hôtel de Paris.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 164.48397827148438,
+      "x1": 535.4569702148438,
+      "y1": 196.3439483642578
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 164.48397827148438,
+    "width": 445.45697021484375,
+    "height": 31.859970092773438,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.20768179074682372,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Nice: Try creative cocktails at Le Comptoir du Marché, a trendy bar in the old town.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 206.66403198242188,
+      "x1": 524.4181518554688,
+      "y1": 221.65652465820312
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 206.66403198242188,
+    "width": 434.41815185546875,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.2609394343212397,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Cannes: Experience dining and entertainment at La Folie Douce, with live music, DJs, and performances.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 231.74398803710938,
+      "x1": 534.0719604492188,
+      "y1": 263.60394287109375
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 231.74398803710938,
+    "width": 444.07196044921875,
+    "height": 31.859954833984375,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.29260604550140074,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "• Marseille: Visit Le Trolleybus, a popular bar with multiple rooms and music styles.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 273.92401123046875,
+      "x1": 518.359375,
+      "y1": 288.91650390625
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 273.92401123046875,
+    "width": 428.359375,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.34586365054352114,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 14
+    }
+  },
+  {
+    "text": "• Saint-Tropez: Relax at Bar du Port, known for its chic atmosphere and waterfront views.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 299.0639953613281,
+      "x1": 513.855712890625,
+      "y1": 330.9239807128906
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 299.0639953613281,
+    "width": 423.855712890625,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.37760605474915165,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Montpellier: Enjoy craft cocktails at Papa Doble, a speakeasy-style bar.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 341.2440185546875,
+      "x1": 461.5920104980469,
+      "y1": 356.23651123046875
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 341.2440185546875,
+    "width": 371.5920104980469,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.4308636597912721,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 11
+    }
+  },
+  {
+    "text": "• Toulouse: Sip on cocktails at Fat Cat, a stylish bar with a vintage vibe.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 366.3240051269531,
+      "x1": 454.6919860839844,
+      "y1": 381.3164978027344
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 366.3240051269531,
+    "width": 364.6919860839844,
+    "height": 14.99249267578125,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.4625303095037287,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Bars and Lounges",
+      "font_size": 12.0,
+      "word_count": 15
+    }
+  },
+  {
+    "text": "• Saint-Tropez: Dance at the famous Les Caves du Roy, known for its glamorous atmosphere and celebrity clientele.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 416.54400634765625,
+      "x1": 499.7518005371094,
+      "y1": 448.40399169921875
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 416.54400634765625,
+    "width": 409.7518005371094,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5259394019541114,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Nice: Party at High Club on the Promenade des Anglais, featuring multiple dance floors and top DJs.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 458.78399658203125,
+      "x1": 513.3121337890625,
+      "y1": 490.583984375
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 458.78399658203125,
+    "width": 423.3121337890625,
+    "height": 31.79998779296875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.5792727229571102,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Cannes: Enjoy the stylish setting and rooftop terrace at La Suite, oﬀering stunning views of Cannes.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 500.9640197753906,
+      "x1": 515.7120971679688,
+      "y1": 532.8240356445312
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 500.9640197753906,
+    "width": 425.71209716796875,
+    "height": 31.860015869140625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6325303279992306,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Marseille: Visit R2 Rooftop, a popular nightclub with panoramic views of the city and the sea.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 543.1439819335938,
+      "x1": 532.6392822265625,
+      "y1": 575.0039672851562
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 543.1439819335938,
+    "width": 442.6392822265625,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.6857878559767597,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "• Monaco: Experience the exclusive Jimmy'z, a legendary nightclub with a luxurious ambiance.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 585.323974609375,
+      "x1": 520.9981079101562,
+      "y1": 617.1840209960938
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 585.323974609375,
+    "width": 430.99810791015625,
+    "height": 31.86004638671875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7390454224865846,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 13
+    }
+  },
+  {
+    "text": "• Montpellier: Dance the night away at L'Antirouille, a club known for its eclectic music and lively atmosphere.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 627.5039672851562,
+      "x1": 533.8980712890625,
+      "y1": 659.3639526367188
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 627.5039672851562,
+    "width": 443.8980712890625,
+    "height": 31.8599853515625,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.7923029889964094,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "• Toulouse: Check out Le Purple, a trendy nightclub with a vibrant dance floor and top- notch DJs.",
+    "bbox": {
+      "x0": 90.0,
+      "y0": 669.7439575195312,
+      "x1": 533.52001953125,
+      "y1": 701.60400390625
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 669.7439575195312,
+    "width": 443.52001953125,
+    "height": 31.86004638671875,
+    "relative_x": 0.14705882352941177,
+    "relative_y": 0.8456363099994082,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 11,
+      "section_title": "Nightclubs",
+      "font_size": 12.0,
+      "word_count": 18
+    }
+  },
+  {
+    "text": "The South of France is a diverse and enchanting region that oﬀers a wide range of activities and experiences for travelers. Whether you're exploring the stunning coastline, immersing yourself in the rich cultural heritage, or indulging in the culinary delights, there is something for everyone to enjoy. From family-friendly adventures to vibrant nightlife, the South of France promises an unforgettable journey filled with memories that will last a lifetime. Use this guide to plan your trip and make the most of everything this beautiful region has to oﬀer.",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 97.16402435302734,
+      "x1": 539.0519409179688,
+      "y1": 197.36390686035156
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 13,
+    "line_position": 97.16402435302734,
+    "width": 467.05194091796875,
+    "height": 100.19988250732422,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.12268184893059009,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "South of France - Things to Do.pdf",
+      "page_number": 13,
+      "section_title": "Conclusion",
+      "font_size": 12.0,
+      "word_count": 88
+    }
+  }
+]
