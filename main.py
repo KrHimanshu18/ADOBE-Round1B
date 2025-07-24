@@ -484,7 +484,6 @@ class DocumentProcessor:
         ]
         with open("chunk_data/chunks.json", "w", encoding="utf-8") as f:
             json.dump(chunks_to_save, f, indent=2)
-        print("Top 50 ranked chunks with enhanced scores saved to chunk_data/chunks.json")
 
         print("Step 2/4: Identifying top sections from best chunks...")
         extracted_sections = self._generate_main_sections(ranked_chunks)
