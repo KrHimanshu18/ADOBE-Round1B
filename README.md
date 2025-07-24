@@ -2,7 +2,7 @@
 
 ## **Loads three models:**
 
-- **_Bi-Encoder: For embedding text into vectors._**
+- **Bi-Encoder: For embedding text into vectors.**
 - **Cross-Encoder: For fine-grained relevance scoring.**
 - **Summarizer: For summarizing long paragraphs.**
 
