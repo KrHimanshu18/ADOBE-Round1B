@@ -4,7 +4,7 @@ import faiss
 import numpy as np
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from collections import defaultdict, Counter
 import statistics
 import re
@@ -171,7 +171,7 @@ class DocumentProcessor:
                         
                         # Update the current section title to the most recent heading
                         current_section_title = block_text
-                        print(f"    Found {heading_level}: {block_text}")
+                        # print(f"    Found {heading_level}: {block_text}")
                         continue
 
                     # For content blocks, use the most recent heading as section title
@@ -304,7 +304,7 @@ class DocumentProcessor:
 
     def _search_and_rerank(self, query, persona=None, job_description=None, 
                            top_k_retrieval=150, top_k_rerank=50, 
-                           persona_weight=0.3, job_weight=0.2):
+                           persona_weight= 0.8, job_weight= 1):
         """
         Enhanced search and rerank with persona and job description matching.
         
@@ -500,7 +500,7 @@ class DocumentProcessor:
                 "job_description": job_description,
                 "persona_weight": persona_weight,
                 "job_weight": job_weight,
-                "processing_timestamp": datetime.utcnow().isoformat() + "Z"
+                "processing_timestamp": datetime.now(timezone.utc).isoformat()
             },
             "extracted_sections": extracted_sections,
             "subsection_analysis": subsection_analysis

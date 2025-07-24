@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job_to_be_done": "",
+    "job_description": "Plan a trip of 4 days for a group of 10 college friends",
+    "persona_weight": 0.4,
+    "job_weight": 0.3,
+    "processing_timestamp": "2025-07-24T06:24:11.637782+00:00"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 8,
+      "section_title": "Tips and Tricks for Packing",
+      "importance_rank": 1,
+      "final_score": -7.977870750427246,
+      "persona_alignment": 0.5,
+      "job_relevance": 0.0
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 4,
+      "section_title": "Toiletries",
+      "importance_rank": 2,
+      "final_score": -8.349779891967774,
+      "persona_alignment": 0.5,
+      "job_relevance": 0.0
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 6,
+      "section_title": "Safety and Comfort",
+      "importance_rank": 3,
+      "final_score": -8.879508781433106,
+      "persona_alignment": 0.5,
+      "job_relevance": 0.0
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 4,
+      "section_title": "Clothing",
+      "importance_rank": 4,
+      "final_score": -8.954961776733398,
+      "persona_alignment": 0.0,
+      "job_relevance": 0.0
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 2,
+      "section_title": "Water Sports",
+      "importance_rank": 5,
+      "final_score": -9.154332160949707,
+      "persona_alignment": 0.0,
+      "job_relevance": 0.0
+    }
+  ],
+  "subsection_analysis": []
+}
