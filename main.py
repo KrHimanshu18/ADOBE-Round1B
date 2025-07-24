@@ -12,11 +12,14 @@ import re
 from sentence_transformers import SentenceTransformer, CrossEncoder, util
 from transformers import pipeline
 
+from utils.local_model import LocalHeadingModel
+
 # --- Configuration ---
 MODEL_PATHS = {
     'bi_encoder': './models/bi_encoder',
     'cross_encoder': './models/cross_encoder',
-    'summarizer': './models/summarizer'
+    'summarizer': './models/summarizer',
+    'labler': './models/labler'
 }
 PDF_DATA_PATH = './data'
 
@@ -36,11 +39,11 @@ class DocumentProcessor:
         doc_name = os.path.basename(doc_path)
         print(f"  - Processing document: {doc_name}")
         document_chunks = []
+        section_titles = []
 
         try:
             doc = fitz.open(doc_path)
 
-            # Step 1: Compute base font size using median
             all_font_sizes = []
             for page in doc:
                 blocks = page.get_text("dict")["blocks"]
@@ -52,13 +55,13 @@ class DocumentProcessor:
                             all_font_sizes.append(span["size"])
 
             base_font_size = statistics.median(all_font_sizes) if all_font_sizes else 10
-            heading_threshold = base_font_size * 1.05  # Lower threshold since headings can be same size
-
-            # Track the most recent heading (regardless of level)
+            heading_threshold = base_font_size * 1.05
             current_section_title = "Introduction"
 
             for page_num, page in enumerate(doc):
+                page_width, page_height = page.rect.width, page.rect.height
                 blocks = page.get_text("dict")["blocks"]
+
                 for block in blocks:
                     if "lines" not in block:
                         continue
@@ -82,7 +85,6 @@ class DocumentProcessor:
                             size = span["size"]
                             max_font_size = max(max_font_size, size)
 
-                            # Check formatting
                             if "bold" in font or "black" in font or "heavy" in font:
                                 is_bold = True
                             if "italic" in font or "oblique" in font:
@@ -97,38 +99,27 @@ class DocumentProcessor:
 
                     block_text = " ".join(lines).strip()
                     word_count = len(block_text.split())
-                    
-                    # Enhanced bullet detection
+
                     starts_with_bullet = bool(re.match(r"^(\*|•|-|–|—|\d+[\.\)]|[a-zA-Z][\.\)])", block_text))
-                    
-                    # Enhanced heading detection criteria
-                    is_short = word_count <= 15  # Slightly more lenient
+                    is_short = word_count <= 15
                     is_title_case = block_text.istitle() or block_text.isupper()
                     ends_with_colon = block_text.endswith(':')
-                    
-                    # Check for common heading patterns
+
                     heading_patterns = [
-                        r"^\d+\.?\s+[A-Z]",  # "1. Introduction" or "1 Introduction"
-                        r"^[A-Z][a-z]+\s+\d+",  # "Chapter 1"
-                        r"^[A-Z]{2,}",  # All caps words
-                        r"^\d+\.\d+",  # "1.1 Subsection"
-                        r"^[IVX]+\.",  # Roman numerals
+                        r"^\d+\.?\s+[A-Z]",
+                        r"^[A-Z][a-z]+\s+\d+",
+                        r"^[A-Z]{2,}",
+                        r"^\d+\.\d+",
+                        r"^[IVX]+\.?",
                     ]
                     matches_heading_pattern = any(re.match(pattern, block_text) for pattern in heading_patterns)
-                    
-                    # Position-based heuristics (left-aligned, not indented much)
-                    is_left_aligned = bbox[0] < 100  # Adjust based on your document margins
-                    
-                    # Determine if this is a heading based on multiple criteria
+                    is_left_aligned = bbox[0] < 100
+
                     heading_score = 0
-                    
-                    # Font size criterion (less strict)
                     if max_font_size >= heading_threshold:
                         heading_score += 2
                     elif max_font_size >= base_font_size:
                         heading_score += 1
-                    
-                    # Formatting criteria
                     if is_bold:
                         heading_score += 3
                     if is_all_caps and word_count <= 8:
@@ -137,8 +128,6 @@ class DocumentProcessor:
                         heading_score += 1
                     if is_italic:
                         heading_score += 1
-                    
-                    # Content criteria
                     if is_short:
                         heading_score += 2
                     if matches_heading_pattern:
@@ -147,20 +136,18 @@ class DocumentProcessor:
                         heading_score += 1
                     if is_left_aligned:
                         heading_score += 1
-                    
-                    # Negative criteria
                     if starts_with_bullet:
-                        heading_score -= 10  # Strong penalty for bullets
+                        heading_score -= 10
                     if word_count > 20:
                         heading_score -= 2
                     if block_text.endswith('.') and not matches_heading_pattern:
                         heading_score -= 1
-                    
-                    # Determine heading level based on additional criteria
-                    is_heading = heading_score >= 4  # Threshold for being a heading
-                    
+
+                    is_heading = heading_score >= 4
+
+                    x0, y0, x1, y1 = bbox
+
                     if is_heading and not starts_with_bullet:
-                        # Classify heading level based on characteristics
                         if (is_all_caps or max_font_size >= base_font_size * 1.3 or 
                             re.match(r"^(chapter|section|part)\s+\d+", block_text.lower())):
                             heading_level = "H1"
@@ -168,21 +155,58 @@ class DocumentProcessor:
                             heading_level = "H2"
                         else:
                             heading_level = "H3"
-                        
-                        # Update the current section title to the most recent heading
+
                         current_section_title = block_text
-                        # print(f"    Found {heading_level}: {block_text}")
+
+                        section_titles.append({
+                            "text": block_text,
+                            "bbox": {
+                                "x0": x0,
+                                "y0": y0,
+                                "x1": x1,
+                                "y1": y1
+                            },
+                            "font_size": round(max_font_size, 2),
+                            "is_bold": is_bold,
+                            "is_italic": is_italic,
+                            "page_number": page_num + 1,
+                            "line_position": y0,
+                            "width": x1 - x0,
+                            "height": y1 - y0,
+                            "relative_x": round(x0 / page_width, 6),
+                            "relative_y": round(y0 / page_height, 6),
+                            "page_width": page_width,
+                            "page_height": page_height,
+                            "source": "digital"
+                        })
                         continue
 
-                    # For content blocks, use the most recent heading as section title
                     chunk_data = {
-                        'text': block_text.replace('\n', ' '),
-                        'metadata': {
-                            'doc_name': doc_name,
-                            'page_number': page_num + 1,
-                            'section_title': current_section_title,
-                            'font_size': max_font_size,
-                            'word_count': word_count
+                        "text": block_text.replace('\n', ' '),
+                        "bbox": {
+                            "x0": x0,
+                            "y0": y0,
+                            "x1": x1,
+                            "y1": y1
+                        },
+                        "font_size": round(max_font_size, 2),
+                        "is_bold": is_bold,
+                        "is_italic": is_italic,
+                        "page_number": page_num + 1,
+                        "line_position": y0,
+                        "width": x1 - x0,
+                        "height": y1 - y0,
+                        "relative_x": x0 / page_width,
+                        "relative_y": y0 / page_height,
+                        "page_width": page_width,
+                        "page_height": page_height,
+                        "source": "digital",
+                        "metadata": {
+                            "doc_name": doc_name,
+                            "page_number": page_num + 1,
+                            "section_title": current_section_title,
+                            "font_size": max_font_size,
+                            "word_count": word_count
                         }
                     }
                     document_chunks.append(chunk_data)
@@ -191,7 +215,34 @@ class DocumentProcessor:
             print(f"[ERROR] Failed to chunk {doc_name}: {e}")
             return []
 
+        # ✨ NEW: Predict heading labels using local model
+        if section_titles:
+            try:
+                model = LocalHeadingModel()
+                if model.load_model():
+                    predictions = model.predict(section_titles)
+                    for st, label in zip(section_titles, predictions):
+                        st["predicted_label"] = label
+                else:
+                    print("Warning: Could not load heading model to label section_titles.")
+            except Exception as e:
+                print(f"Warning: Failed to label section_titles: {e}")
+
+        # Save content chunks
+        os.makedirs("chunk_data", exist_ok=True)
+        output_path = os.path.join("chunk_data", f"{os.path.splitext(doc_name)[0]}_chunks.json")
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(document_chunks, f, indent=2, ensure_ascii=False)
+
+        # Save section titles (now with predicted_label)
+        os.makedirs("section_titles", exist_ok=True)
+        title_path = os.path.join("section_titles", f"{os.path.splitext(doc_name)[0]}_titles.json")
+        with open(title_path, "w", encoding="utf-8") as f:
+            json.dump(section_titles, f, indent=2, ensure_ascii=False)
+
         return document_chunks
+
+
 
     def build_index_from_directory(self, pdf_directory):
         absolute_pdf_path = os.path.abspath(pdf_directory)
@@ -389,20 +440,20 @@ class DocumentProcessor:
             # Create a unique identifier for a section within a document
             section_id = (chunk['metadata']['doc_name'], chunk['metadata']['section_title'])
             
+            extracted_sections.append({
+                "document": chunk['metadata']['doc_name'],
+                "page_number": chunk['metadata']['page_number'],
+                "section_title": chunk['metadata']['section_title'],
+                "importance_rank": len(extracted_sections) + 1,
+                "final_score": chunk['final_score'],
+                "persona_alignment": chunk.get('persona_score', 0),
+                "job_relevance": chunk.get('job_score', 0)
+            })
             if section_id not in seen_sections:
-                extracted_sections.append({
-                    "document": chunk['metadata']['doc_name'],
-                    "page_number": chunk['metadata']['page_number'],
-                    "section_title": chunk['metadata']['section_title'],
-                    "importance_rank": len(extracted_sections) + 1,
-                    "final_score": chunk['final_score'],
-                    "persona_alignment": chunk.get('persona_score', 0),
-                    "job_relevance": chunk.get('job_score', 0)
-                })
                 seen_sections.add(section_id)
             
             # Stop once we have 5 unique sections
-            if len(extracted_sections) >= 5:
+            if len(seen_sections) >= 5:
                 break
                 
         return extracted_sections
@@ -467,23 +518,6 @@ class DocumentProcessor:
             persona_weight=persona_weight,
             job_weight=job_weight
         )
-
-        # ✅ Save top 50 ranked chunks to chunk_data/chunks.json with enhanced scores
-        os.makedirs("chunk_data", exist_ok=True)
-        chunks_to_save = [
-            {
-                "text": chunk["text"],
-                "metadata": chunk["metadata"],
-                "rerank_score": float(chunk["rerank_score"]),
-                "final_score": float(chunk["final_score"]),
-                "persona_score": float(chunk.get("persona_score", 0)),
-                "job_score": float(chunk.get("job_score", 0)),
-                "retrieval_score": float(chunk.get("retrieval_score", 0))
-            }
-            for chunk in ranked_chunks
-        ]
-        with open("chunk_data/chunks.json", "w", encoding="utf-8") as f:
-            json.dump(chunks_to_save, f, indent=2)
 
         print("Step 2/4: Identifying top sections from best chunks...")
         extracted_sections = self._generate_main_sections(ranked_chunks)
