@@ -470,45 +470,47 @@ class DocumentProcessor:
 
     # --- COMPLETELY NEW LOGIC FOR SUBSECTIONS ---
     def _generate_dynamic_subsections(self, ranked_chunks):
-        top_chunks_for_clustering = ranked_chunks
-
-        if len(top_chunks_for_clustering) < 3:
-            return []
-
-        result_embeddings = np.array([self.chunk_embeddings[chunk['original_index']] for chunk in top_chunks_for_clustering])
-
-        clusters = util.community_detection(result_embeddings, min_community_size=2, threshold=0.45)
+        # Group ranked_chunks by document
+        doc_groups = defaultdict(list)
+        for chunk in ranked_chunks:
+            doc_name = chunk['metadata']['doc_name']
+            doc_groups[doc_name].append(chunk)
 
         subsection_analysis = []
 
-        for i, cluster in enumerate(clusters):
-
-            if len(cluster) < 3:
+        for doc_name, chunks in doc_groups.items():
+            if len(chunks) < 3:
                 continue
 
-            cluster_chunks = [top_chunks_for_clustering[j] for j in cluster]
-            full_text = " ".join([chunk['text'] for chunk in cluster_chunks])
+            result_embeddings = np.array([self.chunk_embeddings[chunk['original_index']] for chunk in chunks])
+            clusters = util.community_detection(result_embeddings, min_community_size=2, threshold=0.45)
 
-            try:
-                if len(full_text.split()) > 40:
-                    summary = self.summarizer(full_text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
-                else:
-                    summary = full_text
-            except Exception as e:
-                print(f"[ERROR] Summarization failed: {e}")
-                summary = full_text[:300] + "..."
+            for i, cluster in enumerate(clusters):
+                if len(cluster) < 3:
+                    continue
 
-            docs = sorted(list(set([chunk['metadata']['doc_name'] for chunk in cluster_chunks])))
-            pages = sorted(list(set([chunk['metadata']['page_number'] for chunk in cluster_chunks])))
-            avg_score = sum([chunk['final_score'] for chunk in cluster_chunks]) / len(cluster_chunks)
+                cluster_chunks = [chunks[j] for j in cluster]
+                full_text = " ".join([chunk['text'] for chunk in cluster_chunks])
 
-            subsection_analysis.append({
-                "document": docs[0] if len(docs) == 1 else docs,
-                "refined_text": summary,
-                "page_number": pages[0] if len(pages) == 1 else pages,
-            })
+                try:
+                    if len(full_text.split()) > 40:
+                        summary = self.summarizer(full_text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
+                    else:
+                        summary = full_text
+                except Exception as e:
+                    print(f"[ERROR] Summarization failed: {e}")
+                    summary = full_text[:300] + "..."
+
+                pages = sorted(list(set([chunk['metadata']['page_number'] for chunk in cluster_chunks])))
+
+                subsection_analysis.append({
+                    "document": doc_name,
+                    "refined_text": summary,
+                    "page_number": pages[0] if len(pages) == 1 else pages,
+                })
 
         return subsection_analysis
+
 
 
     def process_query(self, query, persona, input_documents, job_description=None, 
@@ -517,7 +519,7 @@ class DocumentProcessor:
 
         print("Step 1/4: Searching for relevant information with enhanced ranking...")
         
-        # Use enhanced search with persona and job description
+        # Use enhanced search with persona and job description  
         ranked_chunks = self._search_and_rerank(
             query=query, 
             persona=persona, 
@@ -577,8 +579,8 @@ def main():
     processor.build_index_from_directory(PDF_DATA_PATH)
 
     # --- Travel Planning Configuration ---
-    PERSONA = "HR professional"
-    QUERY = "Create and manage fillable forms for onboarding and compliance."
+    PERSONA = "Food Contractor"
+    QUERY = "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items."
     
     INPUT_DOCS = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
     

@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Dinner Ideas - Mains_1.pdf",
+      "Dinner Ideas - Mains_2.pdf",
+      "Dinner Ideas - Mains_3.pdf",
+      "Dinner Ideas - Sides_1.pdf",
+      "Dinner Ideas - Sides_2.pdf",
+      "Dinner Ideas - Sides_3.pdf",
+      "Dinner Ideas - Sides_4.pdf",
+      "Lunch Ideas.pdf"
+    ],
+    "persona": "Food Contractor",
+    "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+    "processing_timestamp": "2025-07-26T07:40:18.344370+00:00"
+  },
+  "extracted_sections": [
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Pulled Pork Sandwiches Ingredients:",
+      "page_number": 7,
+      "importance_rank": 1
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Beef and Broccoli Ingredients:",
+      "page_number": 7,
+      "importance_rank": 2
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Pasta Salad Ingredients:",
+      "page_number": 5,
+      "importance_rank": 3
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Turkey and Avocado Sandwich Ingredients:",
+      "page_number": 2,
+      "importance_rank": 4
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Beef Tacos Ingredients:",
+      "page_number": 4,
+      "importance_rank": 5
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "• In a large bowl, combine the chickpeas, tomatoes, cucumber, red onion, and feta cheese. • Drizzle with olive oil and lemon juice. • Season with salt and pepper, then toss to combine. • In a large bowl, combine the quinoa, tomatoes, cucumber, red onion, and feta cheese. • Drizzle with olive oil and...",
+      "page_number": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": " o Sauté diced onion and minced garlic in vegetable oil until softened . Add diced tomatoes, lentils, chickpeas, vegetable broth, cumin, coriander, and tomato paste . o Add tomatoes, tomato paste, thyme, curry powder, salt, and pepper .",
+      "page_number": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "1 pound chicken breast, sliced, sliced. 1/2 cup chicken broth, 1/4 cup flour, 1-4 cup butter, and 1 pound ground turkey . Add broccoli, bell peppers, and snow peas, stir-fry until tender . Pour sauce over vegetables and cook until thickened .",
+      "page_number": [
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": " o Sauté ground beef, diced onion, minced garlic, chopped olives, and raisins . Add diced tomatoes, ground egusi seeds, and crayfish powder, cook for 5 o Dice tomatoes, cucumber, onion, and bell pepper . Add beef, fish, salt, pepper, and water,",
+      "page_number": [
+        2,
+        5,
+        7,
+        12
+      ]
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+[
+  {
+    "text": "o Sauté diced onion and minced garlic until softened. o Add diced tomatoes, lentils, chickpeas, vegetable broth, cumin, coriander,",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 206.17189025878906,
+      "x1": 505.2519226074219,
+      "y1": 232.8800048828125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 1,
+    "line_position": 206.17189025878906,
+    "width": 379.23192596435547,
+    "height": 26.708114624023438,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.2603180432560468,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 1,
+      "section_title": "o 2 cloves garlic o 4 tomatoes o 4 cups vegetable broth o 1 teaspoon cumin o 1 teaspoon coriander o 1 teaspoon turmeric o 1 teaspoon salt o 1/4 cup cilantro  Instructions:",
+      "font_size": 12.0,
+      "word_count": 19
+    }
+  },
+  {
+    "text": "o Bring chicken broth to a boil. o Add mushrooms, bamboo shoots, tofu, soy sauce, rice vinegar, and chili paste. o Mix cornstarch with water and add to the soup, stirring until thickened. o Beat egg and slowly pour into the soup, stirring constantly. o Garnish with chopped green onions and serve.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 526.6119995117188,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 1,
+    "line_position": 645.6318969726562,
+    "width": 400.59200286865234,
+    "height": 70.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 1,
+      "section_title": "o 4 cups chicken broth o 1/2 cup sliced mushrooms o 1/4 cup bamboo shoots o 1/4 cup tofu o 2 tablespoons soy sauce o 2 tablespoons rice vinegar o 1 tablespoon cornstarch o 1 teaspoon chili paste o 1 egg o 1/4 cup chopped green onions  Instructions:",
+      "font_size": 12.0,
+      "word_count": 52
+    }
+  },
+  {
+    "text": "o Cook noodles according to package instructions, then drain. o Sauté sliced beef, diced onion, julienned carrot, and bell pepper in sesame oil",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 484.53192138671875,
+      "x1": 522.1879272460938,
+      "y1": 511.239990234375
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 484.53192138671875,
+    "width": 396.16793060302734,
+    "height": 26.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.6117827290236347,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 2,
+      "section_title": "o 8 ounces sweet potato noodles o 1/2 pound beef o 1 small onion o 1 carrot o 1 bell pepper o 1 cup spinach o 2 tablespoons soy sauce o 1 tablespoon sesame oil o 1 tablespoon sugar o 1 tablespoon sesame seeds  Instructions:",
+      "font_size": 12.0,
+      "word_count": 23
+    }
+  },
+  {
+    "text": "o 1 cup broccoli o 1 cup bell peppers o 1 cup zucchini o 1 small onion o 2 cloves garlic o 2 tablespoons jerk seasoning",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 630.9918823242188,
+      "x1": 287.1920166015625,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 630.9918823242188,
+    "width": 161.1720199584961,
+    "height": 85.34808349609375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7967069221265388,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 2,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 26
+    }
+  },
+  {
+    "text": "o Sauté diced onion and minced garlic in vegetable oil until softened. o Add diced tomatoes, tomato paste, thyme, curry powder, salt, and pepper, cook",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 616.3518676757812,
+      "x1": 534.4598999023438,
+      "y1": 643.0599975585938
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 616.3518676757812,
+    "width": 408.43990325927734,
+    "height": 26.7081298828125,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7782220551461885,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 3,
+      "section_title": "o 2 cups rice o 1 small onion o 2 cloves garlic o 4 tomatoes o 1/4 cup tomato paste o 1/4 cup vegetable oil o 1 teaspoon thyme o 1 teaspoon curry powder o 1 teaspoon salt o 1/2 teaspoon pepper o 4 cups chicken broth  Instructions:",
+      "font_size": 12.0,
+      "word_count": 25
+    }
+  },
+  {
+    "text": "for 5 minutes. o Stir in rice and cook for 2 minutes. o Add chicken broth and bring to a boil. o Reduce heat, cover, and simmer until rice is tender. o Serve warm.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.7000122070312,
+      "x1": 394.9720153808594,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 3,
+    "line_position": 645.7000122070312,
+    "width": 268.95201873779297,
+    "height": 70.63995361328125,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.815277793190696,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 3,
+      "section_title": "o 2 cups rice o 1 small onion o 2 cloves garlic o 4 tomatoes o 1/4 cup tomato paste o 1/4 cup vegetable oil o 1 teaspoon thyme o 1 teaspoon curry powder o 1 teaspoon salt o 1/2 teaspoon pepper o 4 cups chicken broth  Instructions:",
+      "font_size": 12.0,
+      "word_count": 34
+    }
+  },
+  {
+    "text": "o 4 potatoes o 1 small onion o 1/4 cup bacon o 1/4 cup vinegar o 1/4 cup chicken broth o 1 tablespoon mustard o 1 teaspoon sugar o 1 teaspoon salt o 1/2 teaspoon pepper",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 587.0718994140625,
+      "x1": 253.29200744628906,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 4,
+    "line_position": 587.0718994140625,
+    "width": 127.27201080322266,
+    "height": 129.26806640625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7412523982500789,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 4,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 36
+    }
+  },
+  {
+    "text": "o Soak bulgur in water until tender, then drain. o Mix bulgur with ground beef, diced onion, pine nuts, cumin, allspice, and salt. o Form mixture into balls or patties. o Fry in hot oil until golden. o Drain on paper towels and serve.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 523.3719482421875,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 645.6318969726562,
+    "width": 397.3519515991211,
+    "height": 70.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 5,
+      "section_title": "o 1 cup bulgur o 1/2 pound ground beef o 1 small onion o 1/4 cup pine nuts o 1 teaspoon cumin o 1 teaspoon allspice o 1 teaspoon salt o Oil for frying  Instructions:",
+      "font_size": 12.0,
+      "word_count": 44
+    }
+  },
+  {
+    "text": "o Cut cabbage into quarters and soak in salted water for 2 hours. o Rinse and drain cabbage. o Mix sugar, fish sauce, gochugaru, minced garlic, grated ginger, and chopped",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 250.15187072753906,
+      "x1": 512.3839721679688,
+      "y1": 291.5
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 250.15187072753906,
+    "width": 386.36397552490234,
+    "height": 41.34812927246094,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.31584832162568066,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 6,
+      "section_title": "o 1 napa cabbage o 1/4 cup sea salt o 1 tablespoon sugar o 2 tablespoons fish sauce o 2 tablespoons gochugaru (Korean chili powder) o 4 cloves garlic o 1 inch ginger o 4 green onions  Instructions:",
+      "font_size": 12.0,
+      "word_count": 30
+    }
+  },
+  {
+    "text": "o Mix yogurt with salt. o Place yogurt in a cheesecloth-lined strainer over a bowl. o Let drain in the refrigerator for 24 hours. o Transfer labneh to a serving dish and drizzle with olive oil. o Serve with pita bread.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 426.9519958496094,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 645.6318969726562,
+    "width": 300.93199920654297,
+    "height": 70.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 6,
+      "section_title": "o 2 cups yogurt o 1/2 teaspoon salt o 1/4 cup olive oil  Instructions:",
+      "font_size": 12.0,
+      "word_count": 41
+    }
+  },
+  {
+    "text": "o 2 cups white beans o 1 small onion o 2 cloves garlic o 4 tomatoes o 1/4 cup olive oil o 1 teaspoon cumin",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 630.9918823242188,
+      "x1": 239.79200744628906,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 630.9918823242188,
+    "width": 113.77201080322266,
+    "height": 85.34808349609375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7967069221265388,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 7,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 25
+    }
+  },
+  {
+    "text": "o Dissolve yeast and sugar in warm water, let sit until foamy. o Mix flour and salt in a bowl, then add yeast mixture and olive oil. o Knead until smooth, then let rise until doubled. o Divide dough into balls and roll out into circles. o Spread za'atar mixed with olive oil on top. o Bake at 400°F (200°C) for 10-12 minutes until golden. o Serve warm.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 616.3518676757812,
+      "x1": 461.4519958496094,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 616.3518676757812,
+    "width": 335.43199920654297,
+    "height": 99.98809814453125,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7782220551461885,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 8,
+      "section_title": "o 2 1/4 teaspoons active dry yeast o 1 teaspoon sugar o 1 cup warm water o 3 cups flour o 1 teaspoon salt o 1/4 cup olive oil o 1/4 cup za'atar  Instructions:",
+      "font_size": 12.0,
+      "word_count": 68
+    }
+  },
+  {
+    "text": "o Rinse rice and soak in water for 1 hour. o Steam rice until tender. o Heat coconut milk with sugar and salt until dissolved.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 674.9718627929688,
+      "x1": 404.9320068359375,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 674.9718627929688,
+    "width": 278.9120101928711,
+    "height": 41.36810302734375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8522372004961727,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 9,
+      "section_title": "o 1 cup glutinous rice o 1 cup coconut milk o 1/4 cup sugar o 1/4 teaspoon salt o 2 mangoes  Instructions:",
+      "font_size": 12.0,
+      "word_count": 25
+    }
+  },
+  {
+    "text": "o 1 onion o 2 carrots o 2 celery stalks o 2 cloves garlic o 1 zucchini",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 214.65200805664062,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 645.6318969726562,
+    "width": 88.63201141357422,
+    "height": 70.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 10,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "o Sauté diced onion, minced garlic, and sliced bell pepper until softened. o Add diced tomatoes and cook for 5 minutes. o Stir in coconut milk, sliced bananas, salt, and pepper. o Simmer for 10 minutes. o Garnish with chopped cilantro and serve warm.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 490.1920166015625,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 11,
+    "line_position": 645.6318969726562,
+    "width": 364.1720199584961,
+    "height": 70.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 11,
+      "section_title": "o 4 bananas o 1 small onion o 2 cloves garlic o 1 bell pepper o 2 tomatoes o 1 cup coconut milk o 1/4 cup cilantro o 1 teaspoon salt o 1/2 teaspoon pepper  Instructions:",
+      "font_size": 12.0,
+      "word_count": 44
+    }
+  },
+  {
+    "text": "o Roast bell peppers until charred, then peel and seed. o Blend peppers, walnuts, breadcrumbs, minced garlic, olive oil, pomegranate",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 484.53192138671875,
+      "x1": 515.6478881835938,
+      "y1": 511.239990234375
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 12,
+    "line_position": 484.53192138671875,
+    "width": 389.62789154052734,
+    "height": 26.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.6117827290236347,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 12,
+      "section_title": "o 2 red bell peppers o 1/2 cup walnuts o 1/4 cup breadcrumbs o 2 cloves garlic o 1/4 cup olive oil o 1 tablespoon pomegranate molasses o 1 teaspoon cumin o 1 teaspoon salt  Instructions:",
+      "font_size": 12.0,
+      "word_count": 20
+    }
+  },
+  {
+    "text": "o Roast eggplants until soft, then peel and mash.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 689.6318969726562,
+      "x1": 374.4519958496094,
+      "y1": 701.7000122070312
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 12,
+    "line_position": 689.6318969726562,
+    "width": 248.43199920654297,
+    "height": 12.068115234375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8707473446624447,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 12,
+      "section_title": "o 2 eggplants o 1/4 cup tahini o 1/4 cup lemon juice o 2 cloves garlic o 1/4 cup olive oil o 1 teaspoon salt  Instructions:",
+      "font_size": 12.0,
+      "word_count": 9
+    }
+  },
+  {
+    "text": "o Preheat oven to 375°F (190°C). o Heat milk, butter, and salt in a saucepan until boiling.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 689.6318969726562,
+      "x1": 404.2720031738281,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 14,
+    "line_position": 689.6318969726562,
+    "width": 278.2520065307617,
+    "height": 26.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8707473446624447,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 14,
+      "section_title": "o 2 cups tapioca flour o 1 cup milk o 1/2 cup butter o 1 teaspoon salt o 1 cup grated Parmesan cheese o 2 eggs  Instructions:",
+      "font_size": 12.0,
+      "word_count": 17
+    }
+  },
+  {
+    "text": "o Soak rice noodles in warm water until softened, then drain. o Sauté shrimp in a pan until cooked, then set aside.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 616.3518676757812,
+      "x1": 434.4519958496094,
+      "y1": 643.0599975585938
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 15,
+    "line_position": 616.3518676757812,
+    "width": 308.43199920654297,
+    "height": 26.7081298828125,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7782220551461885,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_3.pdf",
+      "page_number": 15,
+      "section_title": "o 8 ounces rice noodles o 1/2 pound shrimp o 2 eggs o 1 cup bean sprouts o 1/4 cup peanuts o 2 tablespoons fish sauce o 2 tablespoons tamarind paste o 1 tablespoon sugar o 1 tablespoon lime juice o 1/4 cup green onions  Instructions:",
+      "font_size": 12.0,
+      "word_count": 22
+    }
+  }
+]

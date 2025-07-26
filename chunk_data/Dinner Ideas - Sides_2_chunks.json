@@ -1,0 +1,394 @@
+[
+  {
+    "text": "o Shred cabbage and grate carrots. o Mix mayonnaise, vinegar, sugar, and salt in a bowl. o Toss cabbage and carrots with dressing. o Chill for at least 1 hour before serving.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 660.3319091796875,
+      "x1": 391.49200439453125,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 1,
+    "line_position": 660.3319091796875,
+    "width": 265.47200775146484,
+    "height": 56.008056640625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8337524105804135,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 1,
+      "section_title": "o 1 small cabbage o 2 carrots o 1/2 cup mayonnaise o 2 tablespoons apple cider vinegar o 1 tablespoon sugar o 1 teaspoon salt  Instructions:",
+      "font_size": 12.0,
+      "word_count": 32
+    }
+  },
+  {
+    "text": "o 8 slices bread o 4 slices ham o 1 cup grated Gruyère cheese o 1/4 cup béchamel sauce",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 660.3319091796875,
+      "x1": 286.052001953125,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 2,
+    "line_position": 660.3319091796875,
+    "width": 160.0320053100586,
+    "height": 56.008056640625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8337524105804135,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 2,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 19
+    }
+  },
+  {
+    "text": "o Sauté diced onion and minced garlic in palm oil until softened. o Add diced tomatoes, ground egusi seeds, and crayfish powder, cook for 5",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 616.3518676757812,
+      "x1": 500.92388916015625,
+      "y1": 643.0599975585938
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 616.3518676757812,
+    "width": 374.90389251708984,
+    "height": 26.7081298828125,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7782220551461885,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 5,
+      "section_title": "o 1 cup ground egusi seeds o 1/2 pound beef o 1/2 pound fish o 1 small onion o 2 cloves garlic o 4 tomatoes o 1/4 cup palm oil o 1 teaspoon crayfish powder o 1 teaspoon salt o 1/2 teaspoon pepper o 4 cups water o 1/4 cup spinach  Instructions:",
+      "font_size": 12.0,
+      "word_count": 25
+    }
+  },
+  {
+    "text": "minutes. o Add beef, fish, salt, pepper, and water, simmer until meat is tender. o Stir in chopped spinach and cook for 5 minutes. o Serve warm.",
+    "bbox": {
+      "x0": 72.0,
+      "y0": 645.7000122070312,
+      "x1": 472.0119934082031,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 5,
+    "line_position": 645.7000122070312,
+    "width": 400.0119934082031,
+    "height": 70.63995361328125,
+    "relative_x": 0.11764705882352941,
+    "relative_y": 0.815277793190696,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 5,
+      "section_title": "o 1 cup ground egusi seeds o 1/2 pound beef o 1/2 pound fish o 1 small onion o 2 cloves garlic o 4 tomatoes o 1/4 cup palm oil o 1 teaspoon crayfish powder o 1 teaspoon salt o 1/2 teaspoon pepper o 4 cups water o 1/4 cup spinach  Instructions:",
+      "font_size": 12.0,
+      "word_count": 27
+    }
+  },
+  {
+    "text": "o 2 cups flour o 1/2 cup butter o 1/4 cup water o 1 egg o 1/2 pound ground beef o 1 small onion o 2 cloves garlic o 1/4 cup olives o 1/4 cup raisins o 1 teaspoon cumin",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 572.431884765625,
+      "x1": 259.8919982910156,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 6,
+    "line_position": 572.431884765625,
+    "width": 133.87200164794922,
+    "height": 143.9080810546875,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7227675312697285,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 6,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 40
+    }
+  },
+  {
+    "text": "o Mix flour, butter, water, and beaten egg to form a dough, then let rest. o Sauté ground beef, diced onion, minced garlic, chopped olives, and raisins with",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 132.9718780517578,
+      "x1": 529.552001953125,
+      "y1": 159.67999267578125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 132.9718780517578,
+    "width": 403.5320053100586,
+    "height": 26.708114624023438,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.16789378541888614,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 7,
+      "section_title": "o 1 teaspoon paprika o 1 teaspoon salt o Oil for frying  Instructions:",
+      "font_size": 12.0,
+      "word_count": 28
+    }
+  },
+  {
+    "text": "o Drain and rinse chickpeas. o Blend chickpeas, diced onion, minced garlic, chopped parsley, cumin, coriander,",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 533.02392578125,
+      "y1": 672.4000244140625
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 645.6318969726562,
+    "width": 407.0039291381836,
+    "height": 26.76812744140625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 7,
+      "section_title": "o 1 can chickpeas o 1 small onion o 2 cloves garlic o 1/4 cup parsley o 1 teaspoon cumin o 1 teaspoon coriander o 1 teaspoon salt o 1/4 cup flour o Oil for frying  Instructions:",
+      "font_size": 12.0,
+      "word_count": 16
+    }
+  },
+  {
+    "text": "and salt in a food processor. o Add flour and mix until combined. o Form mixture into balls and fry in hot oil until golden.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 675.0399780273438,
+      "x1": 406.0719909667969,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 7,
+    "line_position": 675.0399780273438,
+    "width": 280.05199432373047,
+    "height": 41.29998779296875,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8523232045799795,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 7,
+      "section_title": "o 1 can chickpeas o 1 small onion o 2 cloves garlic o 1/4 cup parsley o 1 teaspoon cumin o 1 teaspoon coriander o 1 teaspoon salt o 1/4 cup flour o Oil for frying  Instructions:",
+      "font_size": 12.0,
+      "word_count": 25
+    }
+  },
+  {
+    "text": "o 1 cup yellow split peas o 1 small onion o 2 cloves garlic o 1/4 cup olive oil o 1/4 cup lemon juice o 1 teaspoon salt",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 630.9918823242188,
+      "x1": 256.23199462890625,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 8,
+    "line_position": 630.9918823242188,
+    "width": 130.21199798583984,
+    "height": 85.34808349609375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.7967069221265388,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 8,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 28
+    }
+  },
+  {
+    "text": "o 2 1/4 teaspoons active dry yeast o 1 teaspoon sugar o 1 cup warm water o 2 1/2 cups flour o 1 teaspoon salt",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 645.6318969726562,
+      "x1": 303.81201171875,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 9,
+    "line_position": 645.6318969726562,
+    "width": 177.7920150756836,
+    "height": 70.70806884765625,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8151917891068892,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 9,
+      "section_title": " Ingredients:",
+      "font_size": 12.0,
+      "word_count": 25
+    }
+  },
+  {
+    "text": "o Dissolve yeast and sugar in warm water, let sit until foamy. o Mix flour and salt in a bowl, then add yeast mixture and olive oil. o Knead until smooth, then let rise until doubled. o Press dough into a baking pan, dimple with fingers, and sprinkle with rosemary",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 132.9718780517578,
+      "x1": 529.7598266601562,
+      "y1": 188.96002197265625
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 10,
+    "line_position": 132.9718780517578,
+    "width": 403.73983001708984,
+    "height": 55.98814392089844,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.16789378541888614,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 10,
+      "section_title": "o 1/4 cup olive oil o Rosemary o Sea salt  Instructions:",
+      "font_size": 12.0,
+      "word_count": 50
+    }
+  },
+  {
+    "text": "o Dice tomatoes, cucumber, onion, and bell pepper. o Blend vegetables with minced garlic, olive oil, vinegar, salt, and pepper until",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 352.69189453125,
+      "x1": 514.2559204101562,
+      "y1": 379.3999938964844
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 12,
+    "line_position": 352.69189453125,
+    "width": 388.23592376708984,
+    "height": 26.708099365234375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.4453180486505682,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 12,
+      "section_title": "o 4 tomatoes o 1 cucumber o 1 small red onion o 1 bell pepper o 2 cloves garlic o 1/4 cup olive oil o 2 tablespoons red wine vinegar o 1 teaspoon salt o 1/2 teaspoon pepper  Instructions:",
+      "font_size": 12.0,
+      "word_count": 21
+    }
+  },
+  {
+    "text": "o Cook shrimp and slice in half. o Cook rice vermicelli according to package instructions, then drain. o Soak rice paper wrappers in warm water until pliable. o Place a small amount of shrimp, vermicelli, lettuce, mint, cilantro, basil, julienned",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 220.81190490722656,
+      "x1": 541.2200317382812,
+      "y1": 276.8599853515625
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 13,
+    "line_position": 220.81190490722656,
+    "width": 415.20003509521484,
+    "height": 56.04808044433594,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.2788029102363972,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 13,
+      "section_title": "o 1 package rice paper wrappers o 1/2 pound shrimp o 1/2 cup rice vermicelli o 1/2 cup lettuce o 1/4 cup mint o 1/4 cup cilantro o 1/4 cup basil o 1/4 cup carrots o 1/4 cup cucumber  Instructions:",
+      "font_size": 12.0,
+      "word_count": 40
+    }
+  },
+  {
+    "text": "o Preheat oven to 375°F (190°C). o Peel and thinly slice potatoes. o Rub a baking dish with a cut clove of garlic.",
+    "bbox": {
+      "x0": 126.0199966430664,
+      "y0": 674.9718627929688,
+      "x1": 355.49200439453125,
+      "y1": 716.3399658203125
+    },
+    "font_size": 12.0,
+    "is_bold": false,
+    "is_italic": false,
+    "page_number": 13,
+    "line_position": 674.9718627929688,
+    "width": 229.47200775146484,
+    "height": 41.36810302734375,
+    "relative_x": 0.20591502719455296,
+    "relative_y": 0.8522372004961727,
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "source": "digital",
+    "metadata": {
+      "doc_name": "Dinner Ideas - Sides_2.pdf",
+      "page_number": 13,
+      "section_title": "o 4 potatoes o 1 cup heavy cream o 1/2 cup milk o 2 cloves garlic o 1/2 cup grated Gruyère cheese o 1 teaspoon salt o 1/2 teaspoon pepper  Instructions:",
+      "font_size": 12.0,
+      "word_count": 23
+    }
+  }
+]
