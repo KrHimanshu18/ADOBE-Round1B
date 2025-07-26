@@ -531,9 +531,6 @@ class DocumentProcessor:
                 "input_documents": input_documents,
                 "persona": persona,
                 "job_to_be_done": query,
-                "job_description": job_description,
-                "persona_weight": persona_weight,
-                "job_weight": job_weight,
                 "processing_timestamp": datetime.now(timezone.utc).isoformat()
             },
             "extracted_sections": extracted_sections,
@@ -553,10 +550,7 @@ def main():
 
     # --- Travel Planning Configuration ---
     PERSONA = "Travel Planner"
-    JOB_TO_BE_DONE = "Plan a trip of 4 days for a group of 10 college friends"
-    
-    # Default query - can be customized based on your PDF content
-    QUERY = ""
+    QUERY = "Plan a trip of 4 days for a group of 10 college friends"
     
     INPUT_DOCS = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
     
@@ -565,7 +559,6 @@ def main():
         query=QUERY, 
         persona=PERSONA, 
         input_documents=INPUT_DOCS,
-        job_description=JOB_TO_BE_DONE,
         persona_weight=0.4,  # Higher weight for persona matching
         job_weight=0.3       # Moderate weight for job relevance
     )

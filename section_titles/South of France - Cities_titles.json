@@ -151,7 +151,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Local Experiences",
@@ -195,7 +195,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Nice: The Jewel of the French Riviera",
@@ -261,7 +261,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Hidden Gems",
@@ -283,7 +283,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -305,7 +305,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Avignon: The City of Popes",
@@ -371,7 +371,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Activities",
@@ -393,7 +393,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -415,7 +415,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Aix-en-Provence: A City of Art and Culture",
@@ -481,7 +481,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Artistic Heritage",
@@ -503,7 +503,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -525,7 +525,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Toulouse: The Pink City",
@@ -591,7 +591,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Aerospace Industry",
@@ -613,7 +613,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -635,7 +635,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Montpellier: A University City with Medieval Charm",
@@ -701,7 +701,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Student Life",
@@ -723,7 +723,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -811,7 +811,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Fusion",
@@ -833,7 +833,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -855,7 +855,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Arles: A Roman Treasure",
@@ -921,7 +921,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Artistic Influence",
@@ -943,7 +943,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Cultural Highlights",
@@ -965,7 +965,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Carcassonne: A Medieval Fortress",
@@ -1031,7 +1031,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Medieval Life",
@@ -1075,7 +1075,7 @@
     "page_width": 612.0,
     "page_height": 792.0,
     "source": "digital",
-    "predicted_label": "H3"
+    "predicted_label": "NONE"
   },
   {
     "text": "Conclusion",
