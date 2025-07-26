@@ -19,7 +19,7 @@ MODEL_PATHS = {
     'bi_encoder': './models/bi_encoder',
     'cross_encoder': './models/cross_encoder',
     'summarizer': './models/summarizer',
-    'labler': './models/labler'
+    'labelr': './models/labelr'
 }
 PDF_DATA_PATH = './data'
 
@@ -30,7 +30,14 @@ class DocumentProcessor:
         self.cross_encoder = CrossEncoder(model_paths['cross_encoder'])
         self.summarizer = pipeline("summarization", model=model_paths['summarizer'], tokenizer=model_paths['summarizer'])
         
+        # Initialize the labeler model
+        # Fixed:
+        self.labeler_model = LocalHeadingModel(model_dir=model_paths['labelr'])
+        if not self.labeler_model.load_model():
+            print("Warning: Could not load labeler model.")
+        
         self.chunks = []
+        self.labeled_chunks = []  # Store chunks with labels
         self.chunk_embeddings = None
         self.index = None
         print("DocumentProcessor initialized successfully.")
@@ -39,7 +46,6 @@ class DocumentProcessor:
         doc_name = os.path.basename(doc_path)
         print(f"  - Processing document: {doc_name}")
         document_chunks = []
-        section_titles = []
 
         try:
             doc = fitz.open(doc_path)
@@ -55,8 +61,6 @@ class DocumentProcessor:
                             all_font_sizes.append(span["size"])
 
             base_font_size = statistics.median(all_font_sizes) if all_font_sizes else 10
-            heading_threshold = base_font_size * 1.05
-            current_section_title = "Introduction"
 
             for page_num, page in enumerate(doc):
                 page_width, page_height = page.rect.width, page.rect.height
@@ -70,8 +74,6 @@ class DocumentProcessor:
                     max_font_size = 0
                     is_bold = False
                     is_italic = False
-                    is_all_caps = True
-                    has_numbers = False
                     bbox = block.get("bbox", [0, 0, 0, 0])
 
                     for line in block["lines"]:
@@ -89,10 +91,6 @@ class DocumentProcessor:
                                 is_bold = True
                             if "italic" in font or "oblique" in font:
                                 is_italic = True
-                            if any(c.islower() for c in span["text"]):
-                                is_all_caps = False
-                            if any(c.isdigit() for c in span["text"]):
-                                has_numbers = True
 
                     if not lines:
                         continue
@@ -100,87 +98,7 @@ class DocumentProcessor:
                     block_text = " ".join(lines).strip()
                     word_count = len(block_text.split())
 
-                    starts_with_bullet = bool(re.match(r"^(\*|•|-|–|—|\d+[\.\)]|[a-zA-Z][\.\)])", block_text))
-                    is_short = word_count <= 15
-                    is_title_case = block_text.istitle() or block_text.isupper()
-                    ends_with_colon = block_text.endswith(':')
-
-                    heading_patterns = [
-                        r"^\d+\.?\s+[A-Z]",
-                        r"^[A-Z][a-z]+\s+\d+",
-                        r"^[A-Z]{2,}",
-                        r"^\d+\.\d+",
-                        r"^[IVX]+\.?",
-                    ]
-                    matches_heading_pattern = any(re.match(pattern, block_text) for pattern in heading_patterns)
-                    is_left_aligned = bbox[0] < 100
-
-                    heading_score = 0
-                    if max_font_size >= heading_threshold:
-                        heading_score += 2
-                    elif max_font_size >= base_font_size:
-                        heading_score += 1
-                    if is_bold:
-                        heading_score += 3
-                    if is_all_caps and word_count <= 8:
-                        heading_score += 2
-                    if is_title_case:
-                        heading_score += 1
-                    if is_italic:
-                        heading_score += 1
-                    if is_short:
-                        heading_score += 2
-                    if matches_heading_pattern:
-                        heading_score += 3
-                    if ends_with_colon:
-                        heading_score += 1
-                    if is_left_aligned:
-                        heading_score += 1
-                    if starts_with_bullet:
-                        heading_score -= 10
-                    if word_count > 20:
-                        heading_score -= 2
-                    if block_text.endswith('.') and not matches_heading_pattern:
-                        heading_score -= 1
-
-                    is_heading = heading_score >= 4
-
                     x0, y0, x1, y1 = bbox
-
-                    if is_heading and not starts_with_bullet:
-                        if (is_all_caps or max_font_size >= base_font_size * 1.3 or 
-                            re.match(r"^(chapter|section|part)\s+\d+", block_text.lower())):
-                            heading_level = "H1"
-                        elif (is_bold and (has_numbers or matches_heading_pattern)):
-                            heading_level = "H2"
-                        else:
-                            heading_level = "H3"
-
-                        current_section_title = block_text
-
-                        section_titles.append({
-                            "text": block_text,
-                            "doc_name": doc_name,
-                            "bbox": {
-                                "x0": x0,
-                                "y0": y0,
-                                "x1": x1,
-                                "y1": y1
-                            },
-                            "font_size": round(max_font_size, 2),
-                            "is_bold": is_bold,
-                            "is_italic": is_italic,
-                            "page_number": page_num + 1,
-                            "line_position": y0,
-                            "width": x1 - x0,
-                            "height": y1 - y0,
-                            "relative_x": round(x0 / page_width, 6),
-                            "relative_y": round(y0 / page_height, 6),
-                            "page_width": page_width,
-                            "page_height": page_height,
-                            "source": "digital"
-                        })
-                        continue
 
                     chunk_data = {
                         "text": block_text.replace('\n', ' '),
@@ -205,7 +123,6 @@ class DocumentProcessor:
                         "metadata": {
                             "doc_name": doc_name,
                             "page_number": page_num + 1,
-                            "section_title": current_section_title,
                             "font_size": max_font_size,
                             "word_count": word_count
                         }
@@ -216,34 +133,57 @@ class DocumentProcessor:
             print(f"[ERROR] Failed to chunk {doc_name}: {e}")
             return []
 
-        # ✨ NEW: Predict heading labels using local model
-        if section_titles:
-            try:
-                model = LocalHeadingModel()
-                if model.load_model():
-                    predictions = model.predict(section_titles)
-                    for st, label in zip(section_titles, predictions):
-                        st["predicted_label"] = label
-                else:
-                    print("Warning: Could not load heading model to label section_titles.")
-            except Exception as e:
-                print(f"Warning: Failed to label section_titles: {e}")
-
-        # Save content chunks
-        os.makedirs("chunk_data", exist_ok=True)
-        output_path = os.path.join("chunk_data", f"{os.path.splitext(doc_name)[0]}_chunks.json")
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(document_chunks, f, indent=2, ensure_ascii=False)
-
-        # Save section titles (now with predicted_label)
-        os.makedirs("section_titles", exist_ok=True)
-        title_path = os.path.join("section_titles", f"{os.path.splitext(doc_name)[0]}_titles.json")
-        with open(title_path, "w", encoding="utf-8") as f:
-            json.dump(section_titles, f, indent=2, ensure_ascii=False)
-
         return document_chunks
 
+    def _label_chunks(self, chunks):
+        """Label all chunks using the labeler model."""
+        print("Labeling chunks...")
+        labeled_chunks = []
+        
+        if not chunks:
+            return labeled_chunks
 
+        try:
+            # Prepare data for labeling (similar format as section_titles)
+            chunks_for_labeling = []
+            for chunk in chunks:
+                chunk_for_label = {
+                    "text": chunk["text"],
+                    "doc_name": chunk["metadata"]["doc_name"],
+                    "bbox": chunk["bbox"],
+                    "font_size": chunk["font_size"],
+                    "is_bold": chunk["is_bold"],
+                    "is_italic": chunk["is_italic"],
+                    "page_number": chunk["page_number"],
+                    "line_position": chunk["line_position"],
+                    "width": chunk["width"],
+                    "height": chunk["height"],
+                    "relative_x": chunk["relative_x"],
+                    "relative_y": chunk["relative_y"],
+                    "page_width": chunk["page_width"],
+                    "page_height": chunk["page_height"],
+                    "source": chunk["source"]
+                }
+                chunks_for_labeling.append(chunk_for_label)
+
+            # Get predictions from labeler model
+            predictions = self.labeler_model.predict(chunks_for_labeling)
+            
+            # Add labels to chunks
+            for chunk, label in zip(chunks, predictions):
+                labeled_chunk = chunk.copy()
+                labeled_chunk["predicted_label"] = label
+                labeled_chunks.append(labeled_chunk)
+                
+        except Exception as e:
+            print(f"Warning: Failed to label chunks: {e}")
+            # If labeling fails, assign 'NONE' to all chunks
+            for chunk in chunks:
+                labeled_chunk = chunk.copy()
+                labeled_chunk["predicted_label"] = "NONE"
+                labeled_chunks.append(labeled_chunk)
+
+        return labeled_chunks
 
     def build_index_from_directory(self, pdf_directory):
         absolute_pdf_path = os.path.abspath(pdf_directory)
@@ -260,21 +200,37 @@ class DocumentProcessor:
             print(f"    > FATAL ERROR: No PDF files found in the directory.")
             sys.exit(1)
 
+        # Step 2: Extract chunks
+        all_chunks = []
         for pdf_path in pdf_files:
-            self.chunks.extend(self._chunk_pdf(pdf_path))
+            chunks = self._chunk_pdf(pdf_path)
+            all_chunks.extend(chunks)
             
-        if not self.chunks:
+        if not all_chunks:
             raise ValueError("No text chunks were extracted.")
 
-        print(f"\nTotal chunks created: {len(self.chunks)}")
-        print("Encoding chunks into vectors...")
+        print(f"Total chunks extracted: {len(all_chunks)}")
+
+        # Step 3: Label all chunks
+        self.labeled_chunks = self._label_chunks(all_chunks)
+        self.chunks = self.labeled_chunks  # Use labeled chunks as main chunks
         
+        # Save labeled chunks to chunk_data folder
+        os.makedirs("chunk_data", exist_ok=True)
+        labeled_chunks_path = os.path.join("chunk_data", "all_labeled_chunks.json")
+        with open(labeled_chunks_path, "w", encoding="utf-8") as f:
+            json.dump(self.labeled_chunks, f, indent=2, ensure_ascii=False)
+        print(f"Labeled chunks saved to: {labeled_chunks_path}")
+
+        # Step 4: Encode all chunks
+        print("Encoding chunks into vectors...")
         self.chunk_embeddings = self.bi_encoder.encode(
             [chunk['text'] for chunk in self.chunks],
             show_progress_bar=True,
             convert_to_tensor=False
         )
 
+        # Step 5: Build FAISS index
         print("Building FAISS index...")
         dimension = self.chunk_embeddings.shape[1]
         self.index = faiss.IndexFlatL2(dimension)
@@ -283,16 +239,13 @@ class DocumentProcessor:
 
     def _extract_key_terms(self, text, max_terms=10):
         """Extract key terms from text for enhanced matching."""
-        # Basic implementation - enhance with proper NLP processing
         stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 
                      'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did',
                      'will', 'would', 'could', 'should', 'may', 'might', 'can', 'this', 'that', 'these', 'those'}
         
-        # Extract words (alphanumeric, 3+ chars)
         words = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
         filtered_words = [w for w in words if w not in stop_words]
         
-        # Return most frequent terms
         word_counts = Counter(filtered_words)
         return [word for word, _ in word_counts.most_common(max_terms)]
 
@@ -301,12 +254,10 @@ class DocumentProcessor:
         enhanced_parts = [query]
         
         if persona:
-            # Extract key persona attributes
             persona_keywords = self._extract_key_terms(persona, max_terms=5)
             enhanced_parts.extend(persona_keywords)
         
         if job_description:
-            # Extract key job requirements
             job_keywords = self._extract_key_terms(job_description, max_terms=5)
             enhanced_parts.extend(job_keywords)
         
@@ -316,7 +267,6 @@ class DocumentProcessor:
         """Prepare optimized inputs for cross-encoder reranking."""
         rerank_inputs = []
         
-        # Create context-aware query for reranking
         context_query = query
         if persona and job_description:
             context_query = f"{query} [Persona: {persona[:100]}...] [Job: {job_description[:100]}...]"
@@ -354,34 +304,45 @@ class DocumentProcessor:
         
         return jaccard_score
 
-    def _search_and_rerank(self, query, persona=None, job_description=None, 
-                           top_k_retrieval=150, top_k_rerank=50, 
-                           persona_weight= 0.8, job_weight= 1):
+    def _calculate_word_count_penalty(self, text, ideal_word_count=8, penalty_factor=0.1):
         """
-        Enhanced search and rerank with persona and job description matching.
+        Calculate a penalty/bonus based on word count to favor shorter texts.
         
         Args:
-            query: Main search query
-            persona: Target persona description for matching
-            job_description: Job requirements for relevance scoring
-            top_k_retrieval: Initial retrieval count
-            top_k_rerank: Final reranked results count
-            persona_weight: Weight for persona matching score
-            job_weight: Weight for job description matching score
+            text: The text to analyze
+            ideal_word_count: The ideal number of words (gets no penalty)
+            penalty_factor: How much to penalize for each word above ideal
+            
+        Returns:
+            A score between -1 and 1, where shorter texts get higher scores
         """
+        word_count = len(text.split())
         
-        # 1. Enhanced query construction
+        if word_count <= ideal_word_count:
+            # Bonus for being at or under ideal length
+            return min(1.0, (ideal_word_count - word_count + 1) * 0.1)
+        else:
+            # Penalty for being over ideal length
+            excess_words = word_count - ideal_word_count
+            penalty = excess_words * penalty_factor
+            return max(-1.0, -penalty)
+
+    def _search_and_rerank(self, query, persona=None, job_description=None, 
+                           top_k_retrieval=150, top_k_rerank=50, 
+                           persona_weight=0.8, job_weight=1):
+        """
+        Enhanced search and rerank with persona and job description matching.
+        """
+        # Step 6: Enhanced search and reranking
         enhanced_query = self._construct_enhanced_query(query, persona, job_description)
         
-        # 2. Multi-vector retrieval
         query_embedding = self.bi_encoder.encode([enhanced_query])
         similarities, top_k_indices = self.index.search(np.array(query_embedding), top_k_retrieval)
         
         candidate_indices = top_k_indices[0]
         candidate_chunks = []
         
-        # 3. Pre-filter based on similarity threshold
-        similarity_threshold = np.percentile(similarities[0], 25)  # Keep top 75%
+        similarity_threshold = np.percentile(similarities[0], 25)
         
         for i, idx in enumerate(candidate_indices):
             if similarities[0][i] >= similarity_threshold:
@@ -393,133 +354,224 @@ class DocumentProcessor:
         if not candidate_chunks:
             return []
         
-        # 4. Batch reranking with context
         rerank_inputs = self._prepare_rerank_inputs(candidate_chunks, query, persona, job_description)
         rerank_scores = self.cross_encoder.predict(rerank_inputs)
         
-        # 5. Multi-criteria scoring
         for i, chunk in enumerate(candidate_chunks):
-            # Base rerank score
             chunk['rerank_score'] = float(rerank_scores[i])
             
-            # Persona matching score
             persona_score = 0
             if persona:
                 persona_score = self._calculate_persona_match(chunk['text'], persona)
             
-            # Job relevance score
             job_score = 0
             if job_description:
                 job_score = self._calculate_job_relevance(chunk['text'], job_description)
             
-            # Combined score
             chunk['final_score'] = (
                 chunk['rerank_score'] + 
                 persona_weight * persona_score + 
                 job_weight * job_score
             )
             
-            # Store component scores for analysis
             chunk['persona_score'] = persona_score
             chunk['job_score'] = job_score
         
-        # 6. Final ranking and return
         ranked_chunks = sorted(candidate_chunks, key=lambda x: x['final_score'], reverse=True)
         return ranked_chunks[:top_k_rerank]
 
-    # --- COMPLETELY NEW LOGIC FOR SECTIONS ---
-    def _generate_main_sections(self, section_titles):
-        extracted_sections = []
-        seen = set()
-
-        # Step 1: Filter only H1 and H2 titles
-        prefered_titles = [t for t in section_titles if t.get("predicted_label", "").upper() in {"H1", "H2"}]
+    def _generate_main_sections(self, query, persona, job_description=None, max_sections=7, 
+                               word_count_weight=0.2, ideal_word_count=8):
+        """
+        Step 7: Main section extraction limited to top 7 most relevant sections.
+        Extract sections from all labeled chunks (TITLE, H1, H2, H3) and return only the most relevant ones.
+        Now includes preference for shorter texts.
+        """
+        print(f"Extracting top {max_sections} most relevant main sections from labeled chunks...")
+        print(f"Word count preference: ideal={ideal_word_count} words, weight={word_count_weight}")
         
-        # Step 2: Sort by similarity descending
-        prefered_titles = sorted(prefered_titles, key=lambda x: x.get("similarity", 0), reverse=True)
+        # Get all chunks that are labeled as headers (not NONE)
+        header_chunks = [chunk for chunk in self.labeled_chunks 
+                        if chunk.get("predicted_label", "NONE") in ["TITLE", "H1", "H2", "H3"]]
+        
+        if not header_chunks:
+            print("No header chunks found.")
+            return []
 
-        # Step 3: Deduplicate by (page_number, text)
-        for title in prefered_titles:
-            key = (title["page_number"], title["text"])
+        # Score headers against enhanced query
+        enhanced_query = self._construct_enhanced_query(query, persona, job_description)
+        header_texts = [chunk["text"] for chunk in header_chunks]
+        header_embeddings = self.bi_encoder.encode(header_texts, convert_to_tensor=False)
+        query_embedding = self.bi_encoder.encode([enhanced_query], convert_to_tensor=False)[0]
+
+        # Calculate comprehensive relevance scores
+        scored_sections = []
+        seen = set()
+        
+        for i, chunk in enumerate(header_chunks):
+            # Calculate semantic similarity
+            similarity = float(np.dot(query_embedding, header_embeddings[i]) / 
+                             (np.linalg.norm(query_embedding) * np.linalg.norm(header_embeddings[i])))
+            
+            # Calculate persona match
+            persona_score = 0
+            if persona:
+                persona_score = self._calculate_persona_match(chunk["text"], persona)
+            
+            # Calculate job relevance
+            job_score = 0
+            if job_description:
+                job_score = self._calculate_job_relevance(chunk["text"], job_description)
+            
+            # Calculate word count preference score
+            word_count_score = self._calculate_word_count_penalty(chunk["text"], ideal_word_count)
+            
+            # Calculate combined relevance score with word count preference
+            # Adjusted weights to accommodate word count preference
+            base_weight = 1.0 - word_count_weight
+            semantic_weight = 0.2 * base_weight
+            persona_weight = 0.3 * base_weight
+            job_weight = 0.5 * base_weight
+            
+            combined_score = (
+                semantic_weight * similarity + 
+                persona_weight * persona_score + 
+                job_weight * job_score +
+                word_count_weight * word_count_score
+            )
+            
+            # Create unique key for deduplication
+            key = (chunk["page_number"], chunk["text"])
             if key in seen:
                 continue
-
-            extracted_sections.append({
-                "document": os.path.basename(title.get("doc_name", "unknown.pdf")),
-                "section_title": title["text"],
-                "similarity": title.get("similarity", 0),
-                "page_number": title["page_number"]
+            
+            scored_sections.append({
+                "document": chunk["metadata"]["doc_name"],
+                "section_title": chunk["text"],
+                "relevance_score": combined_score,
+                "semantic_similarity": similarity,
+                "persona_score": persona_score,
+                "job_score": job_score,
+                "word_count_score": word_count_score,
+                "word_count": len(chunk["text"].split()),
+                "page_number": chunk["page_number"],
+                "predicted_label": chunk.get("predicted_label", "NONE"),
+                "chunk_index": self.labeled_chunks.index(chunk)  # Store index for later use
             })
             seen.add(key)
 
-        # Step 4: Re-rank by similarity again (to be safe after deduplication)
-        extracted_sections = sorted(extracted_sections, key=lambda x: x["similarity"], reverse=True)
+        # Sort by combined relevance score and take top N
+        scored_sections = sorted(scored_sections, key=lambda x: x["relevance_score"], reverse=True)
+        top_sections = scored_sections[:max_sections]
+        
+        # Log the selection results for debugging
+        print(f"Top {len(top_sections)} sections selected:")
+        for i, section in enumerate(top_sections, 1):
+            print(f"  {i}. '{section['section_title'][:50]}...' "
+                  f"(words: {section['word_count']}, "
+                  f"word_score: {section['word_count_score']:.3f}, "
+                  f"total_score: {section['relevance_score']:.3f})")
+        
+        # Assign importance ranks and clean up scores for final output
+        extracted_sections = []
+        for rank, section in enumerate(top_sections, 1):
+            final_section = {
+                "document": section["document"],
+                "section_title": section["section_title"],
+                "importance_rank": rank,
+                "page_number": section["page_number"],
+                "chunk_index": section["chunk_index"]  # Keep for subsection processing
+            }
+            extracted_sections.append(final_section)
+        
+        print(f"Extracted top {len(extracted_sections)} most relevant main sections out of {len(scored_sections)} total header sections.")
+        return extracted_sections
 
-        # Step 5: Keep only top 5 and assign importance_rank
-        top_sections = extracted_sections[:5]
-        for rank, sec in enumerate(top_sections, 1):
-            sec["importance_rank"] = rank
-            del sec["similarity"]  # Optionally remove similarity if not needed in output
-
-        print(f"Extracted top {len(top_sections)} main H1/H2 sections.")
-        return top_sections
-
-
-
-
-
-    # --- COMPLETELY NEW LOGIC FOR SUBSECTIONS ---
-    def _generate_dynamic_subsections(self, ranked_chunks):
-        # Group ranked_chunks by document
-        doc_groups = defaultdict(list)
-        for chunk in ranked_chunks:
-            doc_name = chunk['metadata']['doc_name']
-            doc_groups[doc_name].append(chunk)
+    def _generate_dynamic_subsections(self, main_sections, ranked_chunks):
+        """
+        Step 8: Generate subsections separately for each main section, even if they're from the same PDF.
+        """
+        print("Generating subsections for each selected main section separately...")
+        
+        if not main_sections:
+            return []
 
         subsection_analysis = []
 
-        for doc_name, chunks in doc_groups.items():
-            if len(chunks) < 3:
+        # Process each main section individually
+        for section in main_sections:
+            section_doc = section["document"]
+            section_page = section["page_number"]
+            section_title = section["section_title"]
+            
+            print(f"Processing subsections for: '{section_title}' (Page {section_page}, {section_doc})")
+            
+            # Filter ranked chunks for this specific section
+            # Include chunks from the same document and nearby pages (±1 page)
+            section_chunks = []
+            for chunk in ranked_chunks:
+                chunk_doc = chunk['metadata']['doc_name']
+                chunk_page = chunk['metadata']['page_number']
+                
+                # Include chunk if it's from the same document and nearby pages
+                if chunk_doc == section_doc and abs(chunk_page - section_page) <= 1:
+                    section_chunks.append(chunk)
+
+            if len(section_chunks) < 1:
+                print(f"  Not enough chunks for subsection analysis (found {len(section_chunks)} chunks)")
                 continue
 
-            result_embeddings = np.array([self.chunk_embeddings[chunk['original_index']] for chunk in chunks])
-            clusters = util.community_detection(result_embeddings, min_community_size=2, threshold=0.45)
+            # Generate embeddings for this section's chunks
+            try:
+                result_embeddings = np.array([self.chunk_embeddings[chunk['original_index']] for chunk in section_chunks])
+                clusters = util.community_detection(result_embeddings, min_community_size=2, threshold=0.45)
 
-            for i, cluster in enumerate(clusters):
-                if len(cluster) < 3:
-                    continue
+                section_subsections = []
+                
+                for i, cluster in enumerate(clusters):
+                    if len(cluster) < 2:  # Reduced minimum cluster size
+                        continue
 
-                cluster_chunks = [chunks[j] for j in cluster]
-                full_text = " ".join([chunk['text'] for chunk in cluster_chunks])
+                    cluster_chunks = [section_chunks[j] for j in cluster]
+                    full_text = " ".join([chunk['text'] for chunk in cluster_chunks])
 
-                try:
-                    if len(full_text.split()) > 40:
-                        summary = self.summarizer(full_text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
-                    else:
-                        summary = full_text
-                except Exception as e:
-                    print(f"[ERROR] Summarization failed: {e}")
-                    summary = full_text[:300] + "..."
+                    try:
+                        if len(full_text.split()) > 40:
+                            summary = self.summarizer(full_text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
+                        else:
+                            summary = full_text
+                    except Exception as e:
+                        print(f"[ERROR] Summarization failed for section '{section_title}': {e}")
+                        summary = full_text[:300] + "..."
 
-                pages = sorted(list(set([chunk['metadata']['page_number'] for chunk in cluster_chunks])))
+                    pages = sorted(list(set([chunk['metadata']['page_number'] for chunk in cluster_chunks])))
 
-                subsection_analysis.append({
-                    "document": doc_name,
-                    "refined_text": summary,
-                    "page_number": pages[0] if len(pages) == 1 else pages,
-                })
+                    subsection_data = {
+                        "document": section_doc,
+                        "refined_text": summary,
+                        "page_number": pages[0] if len(pages) == 1 else pages,
+                    }
+                    section_subsections.append(subsection_data)
 
+                if section_subsections:
+                    subsection_analysis.extend(section_subsections)
+                    print(f"  Generated {len(section_subsections)} subsections for '{section_title}'")
+                else:
+                    print(f"  No valid subsections generated for '{section_title}'")
+                    
+            except Exception as e:
+                print(f"[ERROR] Failed to process subsections for section '{section_title}': {e}")
+                continue
+
+        print(f"Generated {len(subsection_analysis)} total subsections across all main sections.")
         return subsection_analysis
 
-
-
     def process_query(self, query, persona, input_documents, job_description=None, 
-                     persona_weight=0.3, job_weight=0.2):
+                     persona_weight=0.3, job_weight=0.2, max_sections=7,
+                     word_count_weight=0.2, ideal_word_count=8):
         print("\n--- Processing Query ---")
 
-        print("Step 1/4: Searching for relevant information with enhanced ranking...")
-        
-        # Use enhanced search with persona and job description  
+        print("Step 1/4: Enhanced search and reranking...")
         ranked_chunks = self._search_and_rerank(
             query=query, 
             persona=persona, 
@@ -528,39 +580,33 @@ class DocumentProcessor:
             job_weight=job_weight
         )
 
-        print("Step 2/4: Identifying top sections from section_titles...")
+        print("Step 2/4: Main section extraction...")
+        extracted_sections = self._generate_main_sections(
+            query, persona, job_description, max_sections=max_sections,
+            word_count_weight=word_count_weight, ideal_word_count=ideal_word_count
+        )
 
-        # Load and rank section titles
-        all_titles = []
-        for doc in input_documents:
-            title_path = os.path.join("section_titles", f"{os.path.splitext(doc)[0]}_titles.json")
-            if os.path.exists(title_path):
-                with open(title_path, "r", encoding="utf-8") as f:
-                    section_data = json.load(f)
-                    all_titles.extend(section_data)
+        print("Step 3/4: Subsection analysis for each selected section...")
+        subsection_analysis = self._generate_dynamic_subsections(extracted_sections, ranked_chunks)
 
-        # Score titles against enhanced query
-        enhanced_query = self._construct_enhanced_query(query, persona, job_description)
-        title_texts = [t["text"] for t in all_titles]
-        title_embeddings = self.bi_encoder.encode(title_texts, convert_to_tensor=False)
-        query_embedding = self.bi_encoder.encode([enhanced_query], convert_to_tensor=False)[0]
+        print("Step 4/4: Assembling final output...")
+        # Remove internal fields from final output
+        for section in extracted_sections:
+            if 'chunk_index' in section:
+                del section['chunk_index']
 
-        # Add similarity score to each title
-        for i, t in enumerate(all_titles):
-            t["similarity"] = float(np.dot(query_embedding, title_embeddings[i]) / (np.linalg.norm(query_embedding) * np.linalg.norm(title_embeddings[i])))
-
-        extracted_sections = self._generate_main_sections(all_titles)
-
-
-        print("Step 3/4: Summarizing most relevant content...")
-        subsection_analysis = self._generate_dynamic_subsections(ranked_chunks)
-
-        print("Step 4/4: Assembling final JSON output...")
         final_output = {
             "metadata": {
                 "input_documents": input_documents,
                 "persona": persona,
                 "job_to_be_done": query,
+                "max_sections_extracted": max_sections,
+                "total_sections_found": len(extracted_sections),
+                "total_subsections_generated": len(subsection_analysis),
+                "word_count_preference": {
+                    "ideal_word_count": ideal_word_count,
+                    "word_count_weight": word_count_weight
+                },
                 "processing_timestamp": datetime.now(timezone.utc).isoformat()
             },
             "extracted_sections": extracted_sections,
@@ -572,30 +618,39 @@ class DocumentProcessor:
 
 def main():
     """
-    Main function to process PDFs for travel planning.
-    You can modify the query below or pass it as a command line argument.
+    Main function to process PDFs.
     """
     processor = DocumentProcessor(MODEL_PATHS)
+    
+    # Step 1: Get input PDFs and build index (Steps 2-5 are handled inside)
     processor.build_index_from_directory(PDF_DATA_PATH)
 
-    # --- Travel Planning Configuration ---
+    # Configuration
     PERSONA = "Food Contractor"
     QUERY = "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items."
+    MAX_SECTIONS = 7  # Limited to top 7 most relevant sections
+    WORD_COUNT_WEIGHT = 0.2  # Weight for word count preference (20%)
+    IDEAL_WORD_COUNT = 8  # Ideal number of words for section titles
     
     INPUT_DOCS = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
     
-    # Process with travel planning focused parameters
+    # Process query (Steps 6-8 are handled inside)
     output_json = processor.process_query(
         query=QUERY, 
         persona=PERSONA, 
         input_documents=INPUT_DOCS,
-        persona_weight=0.4,  # Higher weight for persona matching
-        job_weight=0.3       # Moderate weight for job relevance
+        persona_weight=0.3,
+        job_weight=0.7,
+        max_sections=MAX_SECTIONS,
+        word_count_weight=WORD_COUNT_WEIGHT,
+        ideal_word_count=IDEAL_WORD_COUNT
     )
     
-    with open('travel_plan_output.json', 'w', encoding='utf-8') as f:
+    # Step 9: Save output in the same format
+    with open('output.json', 'w', encoding='utf-8') as f:
         json.dump(output_json, f, indent=2, ensure_ascii=False)
-    print("\nTravel planning output saved to travel_plan_output.json")
+    print(f"\nOutput saved to output.json with top {MAX_SECTIONS} most relevant sections")
+    print(f"Word count preference: ideal={IDEAL_WORD_COUNT} words, weight={WORD_COUNT_WEIGHT}")
 
 if __name__ == '__main__':
     main()
