@@ -160,6 +160,7 @@ class DocumentProcessor:
 
                         section_titles.append({
                             "text": block_text,
+                            "doc_name": doc_name,
                             "bbox": {
                                 "x0": x0,
                                 "y0": y0,
@@ -427,64 +428,66 @@ class DocumentProcessor:
         return ranked_chunks[:top_k_rerank]
 
     # --- COMPLETELY NEW LOGIC FOR SECTIONS ---
-    def _generate_main_sections(self, ranked_chunks):
-        """
-        NEW LOGIC: Generates 'extracted_sections' based on the SECTIONS of the
-        TOP 5 most relevant CHUNKS. This is a "chunk-first" approach.
-        """
+    def _generate_main_sections(self, section_titles):
         extracted_sections = []
-        seen_sections = set()
+        seen = set()
+
+        # Step 1: Filter only H1 and H2 titles
+        prefered_titles = [t for t in section_titles if t.get("predicted_label", "").upper() in {"H1", "H2"}]
         
-        # Iterate through the highest-ranked chunks
-        for chunk in ranked_chunks:
-            # Create a unique identifier for a section within a document
-            section_id = (chunk['metadata']['doc_name'], chunk['metadata']['section_title'])
-            
+        # Step 2: Sort by similarity descending
+        prefered_titles = sorted(prefered_titles, key=lambda x: x.get("similarity", 0), reverse=True)
+
+        # Step 3: Deduplicate by (page_number, text)
+        for title in prefered_titles:
+            key = (title["page_number"], title["text"])
+            if key in seen:
+                continue
+
             extracted_sections.append({
-                "document": chunk['metadata']['doc_name'],
-                "page_number": chunk['metadata']['page_number'],
-                "section_title": chunk['metadata']['section_title'],
-                "importance_rank": len(extracted_sections) + 1,
-                "final_score": chunk['final_score'],
-                "persona_alignment": chunk.get('persona_score', 0),
-                "job_relevance": chunk.get('job_score', 0)
+                "document": os.path.basename(title.get("doc_name", "unknown.pdf")),
+                "section_title": title["text"],
+                "similarity": title.get("similarity", 0),
+                "page_number": title["page_number"]
             })
-            if section_id not in seen_sections:
-                seen_sections.add(section_id)
-            
-            # Stop once we have 5 unique sections
-            if len(seen_sections) >= 5:
-                break
-                
-        return extracted_sections
+            seen.add(key)
+
+        # Step 4: Re-rank by similarity again (to be safe after deduplication)
+        extracted_sections = sorted(extracted_sections, key=lambda x: x["similarity"], reverse=True)
+
+        # Step 5: Keep only top 5 and assign importance_rank
+        top_sections = extracted_sections[:5]
+        for rank, sec in enumerate(top_sections, 1):
+            sec["importance_rank"] = rank
+            del sec["similarity"]  # Optionally remove similarity if not needed in output
+
+        print(f"Extracted top {len(top_sections)} main H1/H2 sections.")
+        return top_sections
+
+
+
+
 
     # --- COMPLETELY NEW LOGIC FOR SUBSECTIONS ---
     def _generate_dynamic_subsections(self, ranked_chunks):
         top_chunks_for_clustering = ranked_chunks
-        print(f"[DEBUG] Top chunks selected for clustering: {len(top_chunks_for_clustering)}")
 
         if len(top_chunks_for_clustering) < 3:
-            print("[DEBUG] Not enough chunks for clustering. Returning early.")
             return []
 
         result_embeddings = np.array([self.chunk_embeddings[chunk['original_index']] for chunk in top_chunks_for_clustering])
-        print(f"[DEBUG] Embeddings shape: {result_embeddings.shape}")
 
         clusters = util.community_detection(result_embeddings, min_community_size=2, threshold=0.45)
-        print(f"[DEBUG] Clusters formed: {len(clusters)}")
 
         subsection_analysis = []
 
         for i, cluster in enumerate(clusters):
-            print(f"[DEBUG] Cluster #{i+1} size: {len(cluster)}")
 
             if len(cluster) < 3:
-                print("[DEBUG] Cluster too small. Skipping.")
                 continue
 
             cluster_chunks = [top_chunks_for_clustering[j] for j in cluster]
             full_text = " ".join([chunk['text'] for chunk in cluster_chunks])
-            print(f"[DEBUG] Cluster #{i+1} text length: {len(full_text.split())} words")
 
             try:
                 if len(full_text.split()) > 40:
@@ -503,14 +506,8 @@ class DocumentProcessor:
                 "document": docs[0] if len(docs) == 1 else docs,
                 "refined_text": summary,
                 "page_number": pages[0] if len(pages) == 1 else pages,
-                "cluster_score": float(avg_score),
-                "chunk_count": len(cluster_chunks)
             })
 
-            if len(subsection_analysis) >= 5:
-                break
-
-        print(f"[DEBUG] Final subsection_analysis count: {len(subsection_analysis)}")
         return subsection_analysis
 
 
@@ -529,8 +526,29 @@ class DocumentProcessor:
             job_weight=job_weight
         )
 
-        print("Step 2/4: Identifying top sections from best chunks...")
-        extracted_sections = self._generate_main_sections(ranked_chunks)
+        print("Step 2/4: Identifying top sections from section_titles...")
+
+        # Load and rank section titles
+        all_titles = []
+        for doc in input_documents:
+            title_path = os.path.join("section_titles", f"{os.path.splitext(doc)[0]}_titles.json")
+            if os.path.exists(title_path):
+                with open(title_path, "r", encoding="utf-8") as f:
+                    section_data = json.load(f)
+                    all_titles.extend(section_data)
+
+        # Score titles against enhanced query
+        enhanced_query = self._construct_enhanced_query(query, persona, job_description)
+        title_texts = [t["text"] for t in all_titles]
+        title_embeddings = self.bi_encoder.encode(title_texts, convert_to_tensor=False)
+        query_embedding = self.bi_encoder.encode([enhanced_query], convert_to_tensor=False)[0]
+
+        # Add similarity score to each title
+        for i, t in enumerate(all_titles):
+            t["similarity"] = float(np.dot(query_embedding, title_embeddings[i]) / (np.linalg.norm(query_embedding) * np.linalg.norm(title_embeddings[i])))
+
+        extracted_sections = self._generate_main_sections(all_titles)
+
 
         print("Step 3/4: Summarizing most relevant content...")
         subsection_analysis = self._generate_dynamic_subsections(ranked_chunks)
@@ -559,8 +577,8 @@ def main():
     processor.build_index_from_directory(PDF_DATA_PATH)
 
     # --- Travel Planning Configuration ---
-    PERSONA = "Travel Planner"
-    QUERY = "Plan a trip of 4 days for a group of 10 college friends"
+    PERSONA = "HR professional"
+    QUERY = "Create and manage fillable forms for onboarding and compliance."
     
     INPUT_DOCS = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
     
