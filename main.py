@@ -460,32 +460,40 @@ class DocumentProcessor:
 
     # --- COMPLETELY NEW LOGIC FOR SUBSECTIONS ---
     def _generate_dynamic_subsections(self, ranked_chunks):
-        """
-        NEW LOGIC: Creates summaries based on clusters formed ONLY from the
-        absolute top-ranked chunks, ensuring high relevance.
-        """
-        # Take only the top ~15 chunks for high-quality clustering
-        top_chunks_for_clustering = ranked_chunks[:15]
+        top_chunks_for_clustering = ranked_chunks
+        print(f"[DEBUG] Top chunks selected for clustering: {len(top_chunks_for_clustering)}")
+
         if len(top_chunks_for_clustering) < 3:
+            print("[DEBUG] Not enough chunks for clustering. Returning early.")
             return []
 
         result_embeddings = np.array([self.chunk_embeddings[chunk['original_index']] for chunk in top_chunks_for_clustering])
-        
-        # Cluster these high-quality chunks
-        clusters = util.community_detection(result_embeddings, min_community_size=3, threshold=0.65) # Adjusted threshold
+        print(f"[DEBUG] Embeddings shape: {result_embeddings.shape}")
+
+        clusters = util.community_detection(result_embeddings, min_community_size=2, threshold=0.45)
+        print(f"[DEBUG] Clusters formed: {len(clusters)}")
 
         subsection_analysis = []
+
         for i, cluster in enumerate(clusters):
-            # Ensure we don't re-summarize the same chunks
-            if len(cluster) < 3: continue
+            print(f"[DEBUG] Cluster #{i+1} size: {len(cluster)}")
+
+            if len(cluster) < 3:
+                print("[DEBUG] Cluster too small. Skipping.")
+                continue
 
             cluster_chunks = [top_chunks_for_clustering[j] for j in cluster]
             full_text = " ".join([chunk['text'] for chunk in cluster_chunks])
-            
-            if len(full_text.split()) > 40:
-                summary = self.summarizer(full_text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
-            else:
-                summary = full_text
+            print(f"[DEBUG] Cluster #{i+1} text length: {len(full_text.split())} words")
+
+            try:
+                if len(full_text.split()) > 40:
+                    summary = self.summarizer(full_text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
+                else:
+                    summary = full_text
+            except Exception as e:
+                print(f"[ERROR] Summarization failed: {e}")
+                summary = full_text[:300] + "..."
 
             docs = sorted(list(set([chunk['metadata']['doc_name'] for chunk in cluster_chunks])))
             pages = sorted(list(set([chunk['metadata']['page_number'] for chunk in cluster_chunks])))
@@ -498,11 +506,13 @@ class DocumentProcessor:
                 "cluster_score": float(avg_score),
                 "chunk_count": len(cluster_chunks)
             })
-            
+
             if len(subsection_analysis) >= 5:
                 break
-                
+
+        print(f"[DEBUG] Final subsection_analysis count: {len(subsection_analysis)}")
         return subsection_analysis
+
 
     def process_query(self, query, persona, input_documents, job_description=None, 
                      persona_weight=0.3, job_weight=0.2):
