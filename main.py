@@ -626,8 +626,12 @@ def main():
     processor.build_index_from_directory(PDF_DATA_PATH)
 
     # Configuration
-    PERSONA = "Food Contractor"
-    QUERY = "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items."
+    PERSONA = "Travel Planner"
+    QUERY = "Plan a trip of 4 days for a group of 10 college friends."
+    # PERSONA = "HR professional"
+    # QUERY = "Create and manage fillable forms for onboarding and compliance."
+    # PERSONA = "Food Contractor"
+    # QUERY = "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items."
     MAX_SECTIONS = 7  # Limited to top 7 most relevant sections
     WORD_COUNT_WEIGHT = 0.2  # Weight for word count preference (20%)
     IDEAL_WORD_COUNT = 8  # Ideal number of words for section titles
