@@ -19,7 +19,7 @@ MODEL_PATHS = {
     'bi_encoder': './models/bi_encoder',
     'cross_encoder': './models/cross_encoder',
     'summarizer': './models/summarizer',
-    'labelr': './models/labelr'
+    'labeler': './models/labeler'
 }
 PDF_DATA_PATH = './data'
 
@@ -32,7 +32,7 @@ class DocumentProcessor:
         
         # Initialize the labeler model
         # Fixed:
-        self.labeler_model = LocalHeadingModel(model_dir=model_paths['labelr'])
+        self.labeler_model = LocalHeadingModel(model_dir=model_paths['labeler'])
         if not self.labeler_model.load_model():
             print("Warning: Could not load labeler model.")
         
