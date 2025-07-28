@@ -22,7 +22,7 @@ MODEL_PATHS = {
     'summarizer': './models/summarizer',
     'labeler': './models/labeler'
 }
-PDF_DATA_PATH = './data'
+PDF_DATA_PATH = './input'
 
 class DocumentProcessor:
     def __init__(self, model_paths):
@@ -692,10 +692,12 @@ def main():
     )
     
     # Step 9: Save output in the same format
-    output_filename = 'output.json'
+    # Step 9: Save output in the 'output' folder
+    os.makedirs("output", exist_ok=True)
+    output_filename = os.path.join("output", "output.json")
     with open(output_filename, 'w', encoding='utf-8') as f:
         json.dump(output_json, f, indent=2, ensure_ascii=False)
-    
+
     print(f"\nOutput saved to {output_filename} with top {args.max_sections} most relevant sections")
     print(f"Word count preference: ideal={args.ideal_word_count} words, weight={args.word_count_weight}")
 

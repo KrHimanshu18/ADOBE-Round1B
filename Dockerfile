@@ -21,6 +21,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Download models during build (if needed)
 RUN python download_models.py
 
+# Create output directory
+RUN mkdir -p /app/output
+
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
