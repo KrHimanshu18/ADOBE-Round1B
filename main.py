@@ -14,6 +14,7 @@ from sentence_transformers import SentenceTransformer, CrossEncoder, util
 from transformers import pipeline
 
 from utils.local_model import LocalHeadingModel
+import argparse
 
 # --- Configuration ---
 MODEL_PATHS = {
@@ -616,90 +617,75 @@ class DocumentProcessor:
 
         print("--- Query Processed Successfully ---")
         return final_output
+    
+
+import argparse
 
 def parse_arguments():
-    """Parse command line arguments."""
-    parser = argparse.ArgumentParser(
-        description='Process PDF documents with custom query and persona',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  python main.py "Plan a trip of 4 days for a group of 10 college friends" "Travel Planner"
-  python main.py "Create fillable forms for onboarding" "HR professional"
-  python main.py "Prepare a vegetarian buffet menu" "Food Contractor"
-        """
-    )
-    
-    parser.add_argument('query', 
-                       help='The query/job to be done (enclosed in quotes if contains spaces)')
-    parser.add_argument('persona', 
-                       help='The persona/role (enclosed in quotes if contains spaces)')
-    parser.add_argument('--max-sections', 
-                       type=int, 
-                       default=7, 
-                       help='Maximum number of sections to extract (default: 7)')
-    parser.add_argument('--word-count-weight', 
-                       type=float, 
-                       default=0.2, 
-                       help='Weight for word count preference (default: 0.2)')
-    parser.add_argument('--ideal-word-count', 
-                       type=int, 
-                       default=8, 
-                       help='Ideal number of words for section titles (default: 8)')
-    parser.add_argument('--persona-weight', 
-                       type=float, 
-                       default=0.3, 
-                       help='Weight for persona matching (default: 0.3)')
-    parser.add_argument('--job-weight', 
-                       type=float, 
-                       default=0.7, 
-                       help='Weight for job relevance (default: 0.7)')
-    
+    parser = argparse.ArgumentParser(description="Process PDFs based on a query and persona.")
+    parser.add_argument("query", type=str, help="User query or task to be done")
+    parser.add_argument("persona", type=str, help="Persona or role of the user")
     return parser.parse_args()
 
 def main():
     """
-    Main function to process PDFs with command line arguments.
+    Main function to process PDFs with command line arguments or interactive user input.
     """
-    # Parse command line arguments
-    args = parse_arguments()
-    
-    print(f"Query: {args.query}")
-    print(f"Persona: {args.persona}")
-    print(f"Max sections: {args.max_sections}")
-    print(f"Word count weight: {args.word_count_weight}")
-    print(f"Ideal word count: {args.ideal_word_count}")
-    print(f"Persona weight: {args.persona_weight}")
-    print(f"Job weight: {args.job_weight}")
+    if len(sys.argv) > 1:
+        args = parse_arguments()
+        query = args.query
+        persona = args.persona
+        persona_weight = 0.3
+        job_weight = 0.7
+        max_sections = 7
+        word_count_weight = 0.3
+        ideal_word_count = 5
+    else:
+        print("No command-line arguments provided. Switching to interactive mode.")
+        query = input("Enter your query/job to be done: ")
+        persona = input("Enter your persona/role: ")
+        max_sections = 7
+        word_count_weight = 0.2
+        ideal_word_count = 5
+        persona_weight = 0.3
+        job_weight = 0.7
+
+    print(f"\nQuery: {query}")
+    print(f"Persona: {persona}")
+    print(f"Max sections: {max_sections}")
+    print(f"Word count weight: {word_count_weight}")
+    print(f"Ideal word count: {ideal_word_count}")
+    print(f"Persona weight: {persona_weight}")
+    print(f"Job weight: {job_weight}")
     
     processor = DocumentProcessor(MODEL_PATHS)
     
-    # Step 1: Get input PDFs and build index (Steps 2-5 are handled inside)
+    # Step 1: Get input PDFs and build index
     processor.build_index_from_directory(PDF_DATA_PATH)
     
-    INPUT_DOCS = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
-    
-    # Process query (Steps 6-8 are handled inside)
+    input_docs = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
+
+    # Step 2: Process query
     output_json = processor.process_query(
-        query=args.query, 
-        persona=args.persona, 
-        input_documents=INPUT_DOCS,
-        persona_weight=args.persona_weight,
-        job_weight=args.job_weight,
-        max_sections=args.max_sections,
-        word_count_weight=args.word_count_weight,
-        ideal_word_count=args.ideal_word_count
+        query=query,
+        persona=persona,
+        input_documents=input_docs,
+        persona_weight=persona_weight,
+        job_weight=job_weight,
+        max_sections=max_sections,
+        word_count_weight=word_count_weight,
+        ideal_word_count=ideal_word_count
     )
-    
-    # Step 9: Save output in the same format
-    # Step 9: Save output in the 'output' folder
+
+    # Step 3: Save output
     os.makedirs("output", exist_ok=True)
     output_filename = os.path.join("output", "output.json")
     with open(output_filename, 'w', encoding='utf-8') as f:
         json.dump(output_json, f, indent=2, ensure_ascii=False)
 
-    print(f"\nOutput saved to {output_filename} with top {args.max_sections} most relevant sections")
-    print(f"Word count preference: ideal={args.ideal_word_count} words, weight={args.word_count_weight}")
+    print(f"\nOutput saved to {output_filename} with top {max_sections} most relevant sections")
+    print(f"Word count preference: ideal={ideal_word_count} words, weight={word_count_weight}")
+
 
 if __name__ == '__main__':
     main()
