@@ -1,0 +1,9 @@
+# Ignore all files and directories
+*
+
+# Except these (allowlist)
+!Dockerfile
+!requirements.txt
+!main.py
+!utils/
+!pdfs/
