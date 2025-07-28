@@ -112,7 +112,7 @@ class DocumentProcessor:
                         "font_size": round(max_font_size, 2),
                         "is_bold": is_bold,
                         "is_italic": is_italic,
-                        "page_number": page_num + 1,
+                        "page_number": page_num,
                         "line_position": y0,
                         "width": x1 - x0,
                         "height": y1 - y0,
@@ -123,7 +123,7 @@ class DocumentProcessor:
                         "source": "digital",
                         "metadata": {
                             "doc_name": doc_name,
-                            "page_number": page_num + 1,
+                            "page_number": page_num,
                             "font_size": max_font_size,
                             "word_count": word_count
                         }
