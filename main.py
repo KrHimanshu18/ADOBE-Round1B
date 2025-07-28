@@ -4,6 +4,7 @@ import faiss
 import numpy as np
 import json
 import sys
+import argparse
 from datetime import datetime, timezone
 from collections import defaultdict, Counter
 import statistics
@@ -616,45 +617,87 @@ class DocumentProcessor:
         print("--- Query Processed Successfully ---")
         return final_output
 
+def parse_arguments():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description='Process PDF documents with custom query and persona',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python main.py "Plan a trip of 4 days for a group of 10 college friends" "Travel Planner"
+  python main.py "Create fillable forms for onboarding" "HR professional"
+  python main.py "Prepare a vegetarian buffet menu" "Food Contractor"
+        """
+    )
+    
+    parser.add_argument('query', 
+                       help='The query/job to be done (enclosed in quotes if contains spaces)')
+    parser.add_argument('persona', 
+                       help='The persona/role (enclosed in quotes if contains spaces)')
+    parser.add_argument('--max-sections', 
+                       type=int, 
+                       default=7, 
+                       help='Maximum number of sections to extract (default: 7)')
+    parser.add_argument('--word-count-weight', 
+                       type=float, 
+                       default=0.2, 
+                       help='Weight for word count preference (default: 0.2)')
+    parser.add_argument('--ideal-word-count', 
+                       type=int, 
+                       default=8, 
+                       help='Ideal number of words for section titles (default: 8)')
+    parser.add_argument('--persona-weight', 
+                       type=float, 
+                       default=0.3, 
+                       help='Weight for persona matching (default: 0.3)')
+    parser.add_argument('--job-weight', 
+                       type=float, 
+                       default=0.7, 
+                       help='Weight for job relevance (default: 0.7)')
+    
+    return parser.parse_args()
+
 def main():
     """
-    Main function to process PDFs.
+    Main function to process PDFs with command line arguments.
     """
+    # Parse command line arguments
+    args = parse_arguments()
+    
+    print(f"Query: {args.query}")
+    print(f"Persona: {args.persona}")
+    print(f"Max sections: {args.max_sections}")
+    print(f"Word count weight: {args.word_count_weight}")
+    print(f"Ideal word count: {args.ideal_word_count}")
+    print(f"Persona weight: {args.persona_weight}")
+    print(f"Job weight: {args.job_weight}")
+    
     processor = DocumentProcessor(MODEL_PATHS)
     
     # Step 1: Get input PDFs and build index (Steps 2-5 are handled inside)
     processor.build_index_from_directory(PDF_DATA_PATH)
-
-    # Configuration
-    PERSONA = "Travel Planner"
-    QUERY = "Plan a trip of 4 days for a group of 10 college friends."
-    # PERSONA = "HR professional"
-    # QUERY = "Create and manage fillable forms for onboarding and compliance."
-    # PERSONA = "Food Contractor"
-    # QUERY = "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items."
-    MAX_SECTIONS = 7  # Limited to top 7 most relevant sections
-    WORD_COUNT_WEIGHT = 0.2  # Weight for word count preference (20%)
-    IDEAL_WORD_COUNT = 8  # Ideal number of words for section titles
     
     INPUT_DOCS = [f for f in os.listdir(PDF_DATA_PATH) if f.endswith('.pdf')]
     
     # Process query (Steps 6-8 are handled inside)
     output_json = processor.process_query(
-        query=QUERY, 
-        persona=PERSONA, 
+        query=args.query, 
+        persona=args.persona, 
         input_documents=INPUT_DOCS,
-        persona_weight=0.3,
-        job_weight=0.7,
-        max_sections=MAX_SECTIONS,
-        word_count_weight=WORD_COUNT_WEIGHT,
-        ideal_word_count=IDEAL_WORD_COUNT
+        persona_weight=args.persona_weight,
+        job_weight=args.job_weight,
+        max_sections=args.max_sections,
+        word_count_weight=args.word_count_weight,
+        ideal_word_count=args.ideal_word_count
     )
     
     # Step 9: Save output in the same format
-    with open('output.json', 'w', encoding='utf-8') as f:
+    output_filename = 'output.json'
+    with open(output_filename, 'w', encoding='utf-8') as f:
         json.dump(output_json, f, indent=2, ensure_ascii=False)
-    print(f"\nOutput saved to output.json with top {MAX_SECTIONS} most relevant sections")
-    print(f"Word count preference: ideal={IDEAL_WORD_COUNT} words, weight={WORD_COUNT_WEIGHT}")
+    
+    print(f"\nOutput saved to {output_filename} with top {args.max_sections} most relevant sections")
+    print(f"Word count preference: ideal={args.ideal_word_count} words, weight={args.word_count_weight}")
 
 if __name__ == '__main__':
     main()
