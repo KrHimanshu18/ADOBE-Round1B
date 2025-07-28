@@ -1,0 +1,21 @@
+# PDF processing
+PyMuPDF>=1.23.0
+
+# Vector similarity search
+faiss-cpu>=1.7.4
+
+# Machine learning and data processing
+numpy>=1.24.0
+scikit-learn>=1.3.0
+xgboost>=1.7.0
+
+# NLP and transformers
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# Utility libraries
+joblib>=1.3.0
+
+# Standard library modules (no installation needed):
+# os, sys, json, datetime, collections, statistics, re, argparse, typing, logging
